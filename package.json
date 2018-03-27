@@ -53,6 +53,6 @@
     "modernizr-loader": "^1.0.1",
     "run-sequence": "2.2.1",
     "url-loader": "1.0.1",
-    "webpack": "4.2.0"
+    "webpack": "4.3.0"
   }
 }
