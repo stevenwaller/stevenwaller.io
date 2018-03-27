@@ -9,7 +9,32 @@
 html,
 body {
   height: 100%;
-  font-family: serif;
+  font-family: $serif;
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   color: $blue;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.header-one {
+  font-family: $serif;
+  font-weight: normal;
+}
+
+.header-two {
+  font-family: $serif;
+  font-weight: bold;
+}
+
+.header-three {
+  font-family: $sans;
+  font-weight: normal;
+}
+
+.header-four {
+  font-family: $sans;
+  font-weight: bold;
 }
