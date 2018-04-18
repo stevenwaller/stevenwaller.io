@@ -1,7 +1,10 @@
 {{ partial "start-page" . }}
 <main>
   <article>
-    <h1>{{.Title}}</h1>
+    <div class="page-intro">
+      <h1 class="page-intro__title">{{.Title}}</h1>
+      <p class="page-intro__description">{{.Description}}</p>
+    </div>
     {{ range .Data.Pages }}
       <li>
         <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>

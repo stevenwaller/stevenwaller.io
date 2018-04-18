@@ -1,0 +1,28 @@
+.page-intro {
+  margin-left: 190px;
+  margin-right: 190px;
+}
+.page-intro__title {
+  font-size: 76px;
+  color: $white;
+  font-family: $sans;
+  position: relative;
+  padding-bottom: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 24px;
+    height: 4px;
+    background-color: $dash;
+  }
+}
+.page-intro__description {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 1.4;
+}

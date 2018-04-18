@@ -5,6 +5,7 @@
 // common
 @import 'common/header';
 @import 'common/nav';
+@import 'common/page-intro';
 @import 'common/footer';
 
 html,
@@ -24,7 +25,7 @@ a {
 }
 
 .site-container {
-  max-width: 1024px;
+  max-width: 1300px;
   padding: 80px;
   margin: 0 auto;
   min-height: 100vh;
@@ -48,8 +49,8 @@ a {
 .site-content {
   position: relative;
   z-index: 2;
-  height: 100%;
-  padding: 20px;
+  // height: 100%;
+  padding: 30px 0;
   // border: 1px solid #636049;
   // min-height: 100%;
 }

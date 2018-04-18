@@ -1,8 +1,10 @@
 {{ partial "start-page" . }}
 <main>
   <article>
-    <h1>This is the default list</h1>
-    <h1>{{.Title}}</h1>
+    <div class="page-header">
+      <h1 class="page-header__title">{{.Title}}</h1>
+      <p class="page-header__description">{{.Description}}</p>
+    </div>
     {{ range .Data.Pages }}
       <li>
         <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
