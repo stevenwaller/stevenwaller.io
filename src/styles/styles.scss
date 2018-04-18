@@ -4,6 +4,7 @@
 
 // common
 @import 'common/header';
+@import 'common/nav';
 @import 'common/footer';
 
 html,
@@ -12,7 +13,45 @@ body {
   font-family: $serif;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
-  color: $blue;
+  color: $text;
+  background-color: $background;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+a {
+  color: $primary;
+}
+
+.site-container {
+  max-width: 1024px;
+  padding: 80px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #636049;
+    border-right: 1px solid #636049;
+    border-bottom: 1px solid #636049;
+    border-left: 1px solid #636049;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+  }
+}
+
+.site-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 20px;
+  // border: 1px solid #636049;
+  // min-height: 100%;
 }
 
 h1 {

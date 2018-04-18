@@ -1,5 +1,19 @@
-// header
-// ------------------------------------------------------------------------------------------------- //
 .site-header {
+  position: absolute;
+  top: 19px;
+  left: 70px;
+  right: 70px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.site-header__logo {
+  background-color: $background;
+  padding: 0 10px;
+  svg {
+    fill: $primary;
+  }
+}
+.site-header__logo-link {
 
 }

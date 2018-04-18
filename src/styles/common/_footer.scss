@@ -1,5 +1,35 @@
-// footer
-// ------------------------------------------------------------------------------------------------- //
 .site-footer {
+  font-size: 15px;
+  color: $white;
+  font-family: $sans;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 70px;
+  bottom: 33px;
+  right: 70px;
+  z-index: 2;
+}
+.site-footer__connect {
+  display: flex;
+}
+.site-footer__connect-option {
+  background-color: $background;
+  padding: 0 10px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.site-footer__copyright {
+  text-align: right;
+  background-color: $background;
+  padding: 0 10px;
+}
+.site-footer__label {
+  font-weight: bold;
+}
+.site-footer__item {
 
 }
+

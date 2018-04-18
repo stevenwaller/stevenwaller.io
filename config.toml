@@ -18,3 +18,4 @@ metaDataFormat = "toml"
 # Taxonomies
 # Leave empty to remove Category and Tags
 [taxonomies]
+  tag = "tags"
