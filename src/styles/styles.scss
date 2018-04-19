@@ -2,11 +2,17 @@
 @import 'reset';
 @import 'utilities';
 
-// common
+// Common
 @import 'common/header';
 @import 'common/nav';
 @import 'common/page-intro';
 @import 'common/footer';
+
+// Home
+@import 'home/home';
+
+// Articles
+@import 'articles/articles';
 
 html,
 body {

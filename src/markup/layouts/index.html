@@ -1,4 +1,9 @@
 {{ partial "start-page" . }}
-  <h1>This is the index</h1>
-  {{ .Content }}
+  <main>
+      <div class="page-intro">
+        <h1 class="page-intro__title">Steven Waller</h1>
+        <p class="page-intro__description">{{.Description}}</p>
+      </div>
+      {{ .Content }}
+    </main>
 {{ partial "end-page" . }}

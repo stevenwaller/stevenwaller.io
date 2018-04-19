@@ -1,0 +1,42 @@
+.home-section {
+  display: flex;
+  margin-bottom: 100px;
+}
+.home-section__title {
+  flex: 0 0 190px;
+  padding-top: 4px;
+
+  span {
+    font-size: 20px;
+    color: $white;
+    font-family: $sans;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 16px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $dash;
+    }
+  }
+
+}
+.home-section__content {
+  flex: 0 0 740px;
+  line-height: 1.5;
+
+  p {
+
+  }
+  ul {
+
+  }
+  li {
+
+  }
+}
