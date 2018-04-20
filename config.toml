@@ -2,7 +2,7 @@
 
 baseurl = "/"
 languageCode = "en-us"
-title = "Sisu Hugo Static Site Starter"
+title = "Steven Waller"
 
 # Directory locations
 publishDir = "dist"
