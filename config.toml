@@ -15,6 +15,9 @@ themesDir = "src/markup/themes"
 # Use TOML for front matter
 metaDataFormat = "toml"
 
+# Code syntax highlighting
+pygmentsCodeFences = true
+
 # Taxonomies
 # Leave empty to remove Category and Tags
 [taxonomies]

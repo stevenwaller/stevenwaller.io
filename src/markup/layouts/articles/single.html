@@ -1,5 +1,20 @@
 {{ partial "start-page" . }}
-<article>
-  {{ .Content }}
-</article>
-{{ partial "end-page" . }}
+<section class="article-list__article article">
+  <h1 class="article__title article__title--small">
+    <a class="article__title-link" href="{{.Permalink}}">{{.Title}}</a>
+  </h1>
+  <div class="article__content">
+    <aside class="article-meta">
+      <div class="article-meta__item">
+        <h3 class="article-meta__title">Date</h3>
+        <p class="article-meta__details">{{.Date.Format "2006-01-02"}}</p>
+      </div>
+      <div class="article-meta__item">
+        <h3 class="article-meta__title">Tags</h3>
+        <p class="article-meta__details"><a href="#">CSS</a>, <a href="#">Dev</a></p>
+      </div>
+    </aside>
+    <div class="article__description">{{ .Content }}</div>
+  </div>
+</section>
+

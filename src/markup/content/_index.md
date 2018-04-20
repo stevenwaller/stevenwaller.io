@@ -1,7 +1,7 @@
 +++
 title = "Home"
 date = 2017-07-07T15:27:47-07:00
-description = "A front-end developer with a designer’s mindset, engineering highly tailored, aesthetically refined."
+description = "Been designing and coding websites since the days you had to support IE6, could only use web-safe fonts, and there wasn't support for PNGs."
 draft = false
 type = "page"
 menu = "main"
@@ -28,3 +28,5 @@ weight = 1
     </ul>
   </div>
 </div>
+
+

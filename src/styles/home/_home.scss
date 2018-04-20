@@ -40,3 +40,22 @@
 
   }
 }
+
+.home-article-list {
+  margin-top: -5px;
+}
+.home-article-list__article {
+  margin-bottom: 20px;
+}
+.home-article__title {
+
+}
+.home-article__title-link {
+  font-size: 21px;
+  font-family: $sans;
+  font-weight: bold;
+}
+.home-article__date {
+  font-style: italic;
+  font-size: 15px;
+}

@@ -28,6 +28,20 @@ body {
 
 a {
   color: $primary;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: darken($primary, 15%);
+  }
+}
+
+::selection {
+  background: $primary;
+  color: $background;
+}
+::-moz-selection {
+  background: $primary;
+  color: $background;
 }
 
 .site-container {

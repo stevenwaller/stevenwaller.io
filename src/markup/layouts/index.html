@@ -5,5 +5,22 @@
         <p class="page-intro__description">{{.Description}}</p>
       </div>
       {{ .Content }}
+
+      <div class="home-section">
+        <h2 class="home-section__title"><span>Articles</span></h2>
+        <div class="home-section__content">
+          <div class="home-article-list">
+            {{ range first 4 (where .Data.Pages "Section" "articles")}}
+              <section class="home-article-list__article">
+                <h1 class="home-article__title">
+                  <a class="home-article__title-link" href="{{.Permalink}}">{{.Title}}</a>
+                </h1>
+                <p class="home-article__date">{{.Date.Format "2006-01-02"}}</p>
+              </section>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
     </main>
 {{ partial "end-page" . }}
