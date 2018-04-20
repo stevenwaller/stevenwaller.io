@@ -1,6 +1,5 @@
 .site-footer {
   font-size: 15px;
-  color: $white;
   font-family: $sans;
   display: flex;
   justify-content: space-between;
@@ -28,6 +27,7 @@
 }
 .site-footer__label {
   font-weight: bold;
+  color: $white;
 }
 .site-footer__item {
 
