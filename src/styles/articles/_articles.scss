@@ -39,6 +39,10 @@
   margin-right: 190px;
   width: 740px;
   margin-bottom: 20px;
+  font-size: 42px;
+  font-family: $sans;
+  font-weight: bold;
+  color: $white;
 
   &:after {
     content: "";
@@ -51,11 +55,13 @@
   }
 }
 
+.article__title--small {
+  font-size: 33px;
+}
+
 
 .article__title-link {
-  font-size: 33px;
   color: $primary;
-  font-family: $sans;
   font-weight: bold;
 }
 .article__content {
@@ -63,4 +69,88 @@
 }
 .article__description {
   line-height: 1.5;
+}
+
+.article__body {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-family: $sans;
+    font-weight: bold;
+    color: $white;
+    // color: lighten($text, 10%);
+  }
+
+  h1 {
+
+  }
+  h2 {
+    margin-top: 56px;
+    font-size: 34px;
+  }
+  h3 {
+    margin-top: 31px;
+    font-size: 26px;
+  }
+  h4 {
+
+  }
+  h5 {
+
+  }
+  h6 {
+
+  }
+
+  p, ol, ul {
+    margin-bottom: 29px;
+  }
+
+  p {
+  }
+  ol {
+    list-style: decimal;
+  }
+  ul {
+    list-style: disc;
+  }
+  li {
+    margin: 0 0 14px 30px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  code {
+    font-family: $mono;
+    background-color: lighten($background,9%);
+    padding: 4px 5px 2px;
+    font-size: 18px;
+    // color: lighten($text,9%);
+  }
+
+  pre {
+    font-family: $mono;
+    background-color: lighten($background,9%) !important;
+    padding: 14px 18px;
+    margin: 38px 0;
+
+    code {
+      padding: 0;
+    }
+  }
+  .highlight {
+    // background-color: lighten($background, 10%);
+  }
+
 }
