@@ -1,7 +1,13 @@
 .page-intro {
-  margin-left: 190px;
-  margin-right: 190px;
+  @include row;
+  // margin-left: 190px;
+  // margin-right: 190px;
   margin-bottom: 100px;
+}
+.page-intro__column {
+  @include column;
+  @include column-width(8);
+  margin: 0 auto;
 }
 .page-intro__title {
   font-size: 76px;

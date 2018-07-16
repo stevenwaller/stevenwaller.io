@@ -1,0 +1,17 @@
+@mixin row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin column {
+  flex: 0 0 auto;
+}
+
+@mixin column-1 {
+  flex-basis: $columnWidth;
+}
+
+@mixin column-width($numberOfColumns) {
+  width: (((($columnWidth * $numberOfColumns) + (($numberOfColumns - 1) * $gutterWidth)) / $contentWidth) * 100) * 1%;
+  // width: (($columnWidth * $numberOfColumns) + (($numberOfColumns - 1) * $gutterWidth)) + 0px;
+}

@@ -2,8 +2,10 @@
 <main>
   <article>
     <div class="page-header">
-      <h1 class="page-header__title">{{.Title}}</h1>
-      <p class="page-header__description">{{.Description}}</p>
+      <div class="page-header__column">
+        <h1 class="page-header__title">{{.Title}}</h1>
+        <p class="page-header__description">{{.Description}}</p>
+      </div>
     </div>
     {{ range .Data.Pages }}
       <li>

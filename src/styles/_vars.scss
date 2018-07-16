@@ -13,7 +13,6 @@ $sans: 'soleil';
 $serif: 'ff-tisa-web-pro';
 $mono: Consolas, monaco, 'Andale Mono', AndaleMono, 'Lucida Console', 'Lucida Sans Typewriter', 'Bitstream Vera Sans Mono', monospace;
 
-
 // Easing
 // -------------------------------------------------------------------------- //
 // In
@@ -34,3 +33,11 @@ $easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 $easeInOutQuart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 $easeInOutSine: cubic-bezier(0.445, 0.050, 0.550, 0.950);
 $easeInOutCirc: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+// Column
+// -------------------------------------------------------------------------- //
+$siteWidth: 1200;
+$contentWidth: 1120;
+$gutterWidth: 20;
+$columnWidth: 75;
+$columns: 12;
