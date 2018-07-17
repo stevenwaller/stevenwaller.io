@@ -1,9 +1,10 @@
 .home-section {
-  display: flex;
+  @include row;
   margin-bottom: 100px;
 }
 .home-section__title {
-  flex: 0 0 190px;
+  @include columns(2);
+  // flex: 0 0 190px;
   padding-top: 4px;
 
   span {
@@ -27,7 +28,8 @@
 
 }
 .home-section__content {
-  flex: 0 0 740px;
+  // flex: 0 0 740px;
+  @include columns(8);
   line-height: 1.5;
 
   p {

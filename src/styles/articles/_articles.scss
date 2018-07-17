@@ -8,7 +8,7 @@
 // Meta
 // -------------------------------------------------------------------------- //
 .article-meta {
-  flex: 0 0 190px;
+  @include columns(2);
   line-height: 1.5;
   padding-top: 4px;
 }
@@ -28,16 +28,20 @@
 // Article
 // -------------------------------------------------------------------------- //
 .article {
-  margin-right: 190px;
   margin-bottom: 100px;
 }
 
+.article__title-container {
+  @include row;
+}
 .article__title {
+  @include columns(8);
+  @include offset(2);
   position: relative;
   padding-bottom: 29px;
-  margin-left: 190px;
-  margin-right: 190px;
-  width: 740px;
+  // margin-left: 190px;
+  // margin-right: 190px;
+  // width: 740px;
   margin-bottom: 20px;
   font-size: 42px;
   font-family: $sans;
@@ -65,13 +69,15 @@
   font-weight: bold;
 }
 .article__content {
-  display: flex;
+  @include row;
 }
 .article__description {
+  @include columns(8);
   line-height: 1.5;
 }
 
 .article__body {
+  @include columns(8);
 
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;

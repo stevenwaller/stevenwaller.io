@@ -1,17 +1,15 @@
 @mixin row {
   display: flex;
-  justify-content: space-between;
+  margin: 0 (-$gutterWidthPx/2);
+  // justify-content: space-between;
 }
 
-@mixin column {
+@mixin columns($numberOfColumns) {
   flex: 0 0 auto;
-}
-
-@mixin column-1 {
-  flex-basis: $columnWidth;
-}
-
-@mixin column-width($numberOfColumns) {
+  margin: 0 $gutterWidthPx/2;
   width: (((($columnWidth * $numberOfColumns) + (($numberOfColumns - 1) * $gutterWidth)) / $contentWidth) * 100) * 1%;
-  // width: (($columnWidth * $numberOfColumns) + (($numberOfColumns - 1) * $gutterWidth)) + 0px;
+}
+
+@mixin offset($numberOfColumns) {
+  margin-left: (((($columnWidth * $numberOfColumns) + ($numberOfColumns * $gutterWidth) + ($gutterWidth / 2)) / $contentWidth) * 100) * 1%;
 }
