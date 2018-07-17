@@ -46,8 +46,8 @@ a {
 }
 
 .site-container {
-  max-width: 1300px;
-  padding: 80px;
+  max-width: 1380px;
+  padding: 130px 130px;
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
@@ -59,10 +59,10 @@ a {
     border-right: 1px solid #636049;
     border-bottom: 1px solid #636049;
     border-left: 1px solid #636049;
-    top: 40px;
-    right: 40px;
-    bottom: 40px;
-    left: 40px;
+    top: 65px;
+    right: 65px;
+    bottom: 65px;
+    left: 65px;
     z-index: 1;
   }
 }
@@ -71,7 +71,7 @@ a {
   position: relative;
   z-index: 2;
   // height: 100%;
-  padding: 30px 0;
+  padding: 30px 0 30px;
   // border: 1px solid #636049;
   // min-height: 100%;
 }

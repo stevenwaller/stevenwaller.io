@@ -25,7 +25,7 @@
               <p class="article-meta__details"><a href="#">CSS</a>, <a href="#">Dev</a></p>
             </div>
           </aside>
-          <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">More</a></p>
+          <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>
         </div>
       </section>
     {{ end }}

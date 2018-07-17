@@ -1,7 +1,10 @@
 .home-section {
   @include row;
-  margin-bottom: 100px;
+  margin-bottom: 71px;
 }
+.home-section:not(:last-child) {
+}
+
 .home-section__title {
   @include columns(2);
   // flex: 0 0 190px;
@@ -27,22 +30,32 @@
   }
 
 }
+
+// Where
+// Current Projects
+// ----------------------------------------- //
 .home-section__content {
   // flex: 0 0 740px;
   @include columns(8);
   line-height: 1.5;
 
+  p, ol, ul {
+    margin-bottom: 29px;
+  }
+
   p {
 
   }
   ul {
-
+    list-style: disc;
   }
   li {
-
+    margin: 0 0 14px 30px;
   }
 }
 
+// Articles
+// ----------------------------------------- //
 .home-article-list {
   margin-top: -5px;
 }
@@ -53,11 +66,29 @@
 
 }
 .home-article__title-link {
-  font-size: 21px;
+  font-size: 24px;
   font-family: $sans;
   font-weight: bold;
 }
 .home-article__date {
   font-style: italic;
   font-size: 15px;
+}
+
+// CTA
+// ----------------------------------------- //
+.home-section__cta {
+
+}
+.home-section__cta-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: $sans;
+  font-weight: bold;
+}
+.home-section__cta-icon {
+  position: relative;
+  top: -1px;
+  fill: $primary;
+  margin-left: 8px;
 }

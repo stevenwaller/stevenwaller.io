@@ -9,20 +9,20 @@
 // -------------------------------------------------------------------------- //
 .article-meta {
   @include columns(2);
-  line-height: 1.5;
+  line-height: 1.49;
   padding-top: 4px;
 }
 .article-meta__item {
   margin-bottom: 20px;
 }
 .article-meta__title {
-  font-size: 14px;
+  font-size: 16px;
   color: $white;
   font-family: $sans;
   font-weight: bold;
 }
 .article-meta__details {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 // Article
@@ -43,7 +43,7 @@
   // margin-right: 190px;
   // width: 740px;
   margin-bottom: 20px;
-  font-size: 42px;
+  font-size: 48px;
   font-family: $sans;
   font-weight: bold;
   color: $white;
@@ -75,9 +75,19 @@
   @include columns(8);
   line-height: 1.5;
 }
+.article__description-link {
+
+}
+.article__description-icon {
+  fill: $primary;
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
+}
 
 .article__body {
   @include columns(8);
+  line-height: 1.5;
 
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
@@ -114,6 +124,7 @@
 
   p {
   }
+
   ol {
     list-style: decimal;
   }
@@ -150,6 +161,11 @@
     background-color: lighten($background,9%) !important;
     padding: 14px 18px;
     margin: 38px 0;
+    overflow: auto;
+
+    span {
+      background-color: lighten($background,9%) !important;
+    }
 
     code {
       padding: 0;
