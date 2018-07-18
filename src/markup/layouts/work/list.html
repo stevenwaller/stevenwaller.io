@@ -1,0 +1,38 @@
+{{ partial "start-page" . }}
+<main>
+  <div class="page-intro">
+    <div class="page-intro__content">
+      <h1 class="page-intro__title">{{.Params.page_title}}</h1>
+      <p class="page-intro__description">{{.Description}}</p>
+    </div>
+  </div>
+  <div class="article-list">
+    {{ range .Data.Pages }}
+      <section class="article-list__article article">
+        <div class="article__title-container">
+          <h1 class="article__title article__title--small">
+            <a class="article__title-link" href="{{.Permalink}}">{{.Title}}</a>
+          </h1>
+        </div>
+        <div class="article__content">
+          <aside class="article-meta">
+            <div class="article-meta__item">
+              <h3 class="article-meta__title">Year</h3>
+              <p class="article-meta__details">{{.Params.year}}</p>
+            </div>
+            <div class="article-meta__item">
+              <h3 class="article-meta__title">Role</h3>
+              <p class="article-meta__details">{{.Params.role}}</p>
+            </div>
+            <div class="article-meta__item">
+              <h3 class="article-meta__title">Agency</h3>
+              <p class="article-meta__details">{{.Params.agency}}</p>
+            </div>
+          </aside>
+          <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>
+        </div>
+      </section>
+    {{ end }}
+  </div>
+</main>
+{{ partial "end-page" . }}

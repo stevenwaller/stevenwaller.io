@@ -1,0 +1,22 @@
+{{ partial "start-page" . }}
+<section class="article-list__article article">
+  <div class="article__title-container">
+    <h1 class="article__title">{{.Title}}</h1>
+  </div>
+  <div class="article__content">
+    <aside class="article-meta">
+      <div class="article-meta__item">
+        <h3 class="article-meta__title">Date</h3>
+        <p class="article-meta__details">{{.Date.Format "2006-01-02"}}</p>
+      </div>
+      <div class="article-meta__item">
+        <h3 class="article-meta__title">Tags</h3>
+        <p class="article-meta__details"><a href="#">CSS</a>, <a href="#">Dev</a></p>
+      </div>
+    </aside>
+    <div class="article__body">{{ .Content }}</div>
+  </div>
+</section>
+
+{{ partial "end-page" . }}
+
