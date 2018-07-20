@@ -17,6 +17,7 @@
 
 html,
 body {
+  position: relative;
   height: 100%;
   font-family: $serif;
   font-weight: bold;
@@ -25,6 +26,115 @@ body {
   background-color: $background;
   font-size: 20px;
   line-height: 1.1;
+  height: 100%;
+  background-image: url(/images/dot.svg);
+  background-position: center center;
+  // background-color: none;
+}
+
+// .bg-dots {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: radial-gradient(50% 50%,transparent 50%,$background 100%),url(/images/dot.svg),linear-gradient($background,$background);
+//   // background-image: url(/images/dot.svg);
+//   background-color: none;
+//   z-index: 1;
+//   // opacity: 0.2;
+// }
+
+@keyframes move {
+  from {
+      top: -500px
+  }
+
+  to {
+      top: 1000px
+  }
+}
+
+.lines {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 75%,#000 100%);
+    left: 0;
+    top: 0;
+  }
+
+
+  div {
+    position: absolute;
+    height: 1000px;
+    width: 1px;
+    top: 50%;
+    left: 50%;
+    background: $background;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -500px;
+      height: 500px;
+      width: 100%;
+      background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.2),rgba(255,255,255,0));
+      animation: move 5s linear infinite;
+    }
+  }
+
+  & div:nth-child(1) {
+    transform: translateY(-500px) translateX(3px) rotate(-45deg);
+  }
+  & div:nth-child(2) {
+    transform: translateY(-500px) translateX(-6px) rotate(45deg);
+
+    &:before {
+      animation-delay: .1s;
+    }
+  }
+  & div:nth-child(3) {
+    transform: translateY(-500px) translateX(-213px) rotate(-45deg);
+
+    &:before {
+      animation-delay: .2s;
+    animation-direction: reverse;
+    }
+  }
+  & div:nth-child(4) {
+    transform: translateY(-500px) translateX(-222px) rotate(45deg);
+
+    &:before {
+      animation-delay: .6s;
+    animation-direction: reverse;
+    }
+  }
+  & div:nth-child(5) {
+    transform: translateY(-500px) translateX(218px) rotate(-45deg);
+
+    &:before {
+      animation-delay: .4s;
+    }
+  }
+  & div:nth-child(6) {
+    transform: translateY(-500px) translateX(210px) rotate(45deg);
+
+    &:before {
+      animation-delay: .3s;
+      animation-direction: reverse;
+    }
+  }
 }
 
 a {
@@ -51,6 +161,7 @@ a {
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
+  z-index: 3;
 
   &:after {
     content: "";
