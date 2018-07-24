@@ -11,7 +11,12 @@
       </div>
       <div class="article-meta__item">
         <h3 class="article-meta__title">Tags</h3>
-        <p class="article-meta__details"><a href="#">CSS</a>, <a href="#">Dev</a></p>
+        <p class="article-meta__details">
+          {{ $length := (len .Params.tags)}}
+          {{ range $index, $tag := .Params.tags }}
+            {{ $tag }}{{ if not (eq (add $index 1) $length) }},{{ end }}
+          {{ end }}
+        </p>
       </div>
     </aside>
     <div class="article__body">{{ .Content }}</div>
