@@ -3,11 +3,11 @@ title = "Strafe"
 date = 2018-04-18T14:54:44-07:00
 description = "A blah blah blah"
 draft = false
-client = ""
+client = "Buick"
 year = ""
-role = ""
-agency = ""
-tools = []
+roles = ["Developer"]
+agency = "Sisu"
+tools = ["React", "Typescript", "Docker"]
 featured_image = "images/work/corsaire/featured.png"
 +++
 
