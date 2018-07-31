@@ -1,0 +1,19 @@
+// Meta
+// -------------------------------------------------------------------------- //
+.meta {
+  @include columns(2);
+  line-height: 1.49;
+  padding-top: 4px;
+}
+.meta__item {
+  margin-bottom: 20px;
+}
+.meta__title {
+  font-size: 16px;
+  color: $white;
+  font-family: $sans;
+  font-weight: bold;
+}
+.meta__details {
+  font-size: 16px;
+}

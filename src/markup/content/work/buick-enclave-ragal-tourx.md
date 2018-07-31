@@ -1,13 +1,13 @@
 +++
-title = "Strafe"
+title = "Enclave, Regal, & TourX"
 date = 2018-04-18T14:54:44-07:00
-description = "A blah blah blah"
+description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
 draft = false
 client = "Buick"
 year = ""
 roles = ["Developer"]
 agency = "Sisu"
-tools = ["React", "Typescript", "Docker"]
+tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker"]
 featured_image = "images/work/corsaire/featured.png"
 +++
 

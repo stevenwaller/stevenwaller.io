@@ -6,30 +6,41 @@
       <p class="page-intro__description">{{.Description}}</p>
     </div>
   </div>
-  <div class="article-list">
+  <div class="work-list">
     {{ range .Data.Pages }}
-      <section class="article-list__article article">
-        <div class="article__title-container">
-          <h1 class="article__title article__title--small">
-            <a class="article__title-link" href="{{.Permalink}}">{{.Title}}</a>
-          </h1>
+      <section class="work-list__work work">
+        <div class="work__title-row">
+          <div class="work__title-column">
+            <h2 class="work__client">{{.Params.client}}</h2>
+            <h1 class="work__title">
+              <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a>
+            </h1>
+          </div>
         </div>
-        <div class="article__content">
-          <aside class="article-meta">
-            <div class="article-meta__item">
-              <h3 class="article-meta__title">Year</h3>
-              <p class="article-meta__details">{{.Params.year}}</p>
+        <div class="work__content">
+          <aside class="meta">
+            <div class="meta__item">
+              <h3 class="meta__title">Year</h3>
+              <p class="meta__details">{{.Params.year}}</p>
             </div>
-            <div class="article-meta__item">
-              <h3 class="article-meta__title">Role</h3>
-              <p class="article-meta__details">{{.Params.role}}</p>
+            <div class="meta__item">
+              <h3 class="meta__title">Roles</h3>
+              {{ range .Params.roles }}
+                <p class="meta__details">{{.}}</p>
+              {{ end }}
             </div>
-            <div class="article-meta__item">
-              <h3 class="article-meta__title">Agency</h3>
-              <p class="article-meta__details">{{.Params.agency}}</p>
+            <div class="meta__item">
+              <h3 class="meta__title">Agency</h3>
+              <p class="meta__details">{{.Params.agency}}</p>
+            </div>
+            <div class="meta__item">
+              <h3 class="meta__title">Tools</h3>
+              {{ range .Params.tools }}
+                <p class="meta__details">{{.}}</p>
+              {{ end }}
             </div>
           </aside>
-          <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>
+          <p class="work__description">{{.Description}} <a class="work__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a></p>
         </div>
       </section>
     {{ end }}

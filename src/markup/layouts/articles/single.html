@@ -4,14 +4,14 @@
     <h1 class="article__title">{{.Title}}</h1>
   </div>
   <div class="article__content">
-    <aside class="article-meta">
-      <div class="article-meta__item">
-        <h3 class="article-meta__title">Date</h3>
-        <p class="article-meta__details">{{.Date.Format "2006-01-02"}}</p>
+    <aside class="meta">
+      <div class="meta__item">
+        <h3 class="meta__title">Date</h3>
+        <p class="meta__details">{{.Date.Format "2006-01-02"}}</p>
       </div>
-      <div class="article-meta__item">
-        <h3 class="article-meta__title">Tags</h3>
-        <p class="article-meta__details">
+      <div class="meta__item">
+        <h3 class="meta__title">Tags</h3>
+        <p class="meta__details">
           {{ $length := (len .Params.tags)}}
           {{ range $index, $tag := .Params.tags }}
             {{ $tag }}{{ if not (eq (add $index 1) $length) }},{{ end }}

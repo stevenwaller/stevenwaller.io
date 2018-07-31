@@ -9,20 +9,22 @@
   <div class="article-list">
     {{ range .Data.Pages }}
       <section class="article-list__article article">
-        <div class="article__title-container">
-          <h1 class="article__title article__title--small">
-            <a class="article__title-link" href="{{.Permalink}}">{{.Title}}</a>
-          </h1>
+        <div class="article__title-row">
+          <div class="article__title-column">
+            <h1 class="article__title article__title--small">
+              <a class="article__title-link" href="{{.Permalink}}">{{.Title}}</a>
+            </h1>
+          </div>
         </div>
         <div class="article__content">
-          <aside class="article-meta">
-            <div class="article-meta__item">
-              <h3 class="article-meta__title">Date</h3>
-              <p class="article-meta__details">{{.Date.Format "2006-01-02"}}</p>
+          <aside class="meta">
+            <div class="meta__item">
+              <h3 class="meta__title">Date</h3>
+              <p class="meta__details">{{.Date.Format "2006-01-02"}}</p>
             </div>
-            <div class="article-meta__item">
-              <h3 class="article-meta__title">Tags</h3>
-              <p class="article-meta__details">
+            <div class="meta__item">
+              <h3 class="meta__title">Tags</h3>
+              <p class="meta__details">
                 {{ $length := (len .Params.tags)}}
                 {{ range $index, $tag := .Params.tags }}
                   {{ $tag }}{{ if not (eq (add $index 1) $length) }},{{ end }}

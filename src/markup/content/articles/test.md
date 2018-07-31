@@ -94,6 +94,8 @@ Inside the `admin` directory create an `index.html` file with the following cont
 </html>
 ```
 
+{{< gist stevenwaller 4338a3b88e187152a034aca6ebee89b6 >}}
+
 This is the entry point for the Netlify CMS admin interface that loads the necessary CSS and JavaScript files from a public CDN.
 
 ### Create an uploads directory
@@ -123,6 +125,9 @@ collections:
       fields:
         - {label: "Site Title", name: "title", widget: "string"}
 ```
+
+{{< gist stevenwaller 7478c3b135bb97d17e09999733858c26 >}}
+
 `backend`: Configure 
 
 - `name`: The backend protocol to use.

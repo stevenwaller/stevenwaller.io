@@ -1,31 +1,35 @@
-.article-list {
+.work-list {
 
 }
-.article-list__article {
+.work-list__work {
 
 }
 
-// Article
+// work
 // -------------------------------------------------------------------------- //
-.article {
+.work {
   margin-bottom: 100px;
 }
 
-.article__title-row {
+.work__title-row {
   @include row;
 }
-.article__title-column {
+.work__title-column {
   @include columns(8);
   @include offset(2);
 }
-.article__title {
+.work__client {
+  font-size: 21px;
+  font-family: $sans;
+  font-weight: bold;
+  color: $white;
+  margin-bottom: 10px;
+}
+.work__title {
   position: relative;
   padding-bottom: 29px;
-  // margin-left: 190px;
-  // margin-right: 190px;
-  // width: 740px;
   margin-bottom: 20px;
-  font-size: 48px;
+  font-size: 53px;
   font-family: $sans;
   font-weight: bold;
   color: $white;
@@ -41,33 +45,29 @@
   }
 }
 
-.article__title--small {
-  font-size: 33px;
-}
 
-
-.article__title-link {
+.work__title-link {
   color: $primary;
   font-weight: bold;
 }
-.article__content {
+.work__content {
   @include row;
 }
-.article__description {
+.work__description {
   @include columns(8);
   line-height: 1.5;
 }
-.article__description-link {
+.work__description-link {
 
 }
-.article__description-icon {
+.work__description-icon {
   fill: $primary;
   margin-left: 8px;
   position: relative;
   top: -1px;
 }
 
-.article__body {
+.work__body {
   @include columns(8);
   line-height: 1.5;
 

@@ -8,12 +8,17 @@
 @import 'common/nav';
 @import 'common/page-intro';
 @import 'common/footer';
+@import 'common/meta';
+@import 'common/gist';
 
 // Home
 @import 'home/home';
 
 // Articles
 @import 'articles/articles';
+
+// Work
+@import 'work/work';
 
 html,
 body {
