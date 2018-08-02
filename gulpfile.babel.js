@@ -18,14 +18,6 @@ const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === 'win32' ? 'exe' : process.platform}`;
 
 // location of static files to copy over
-// const staticFiles = [
-//   'src/**/*.*',
-//   'src/**',
-//   '!src/*.html',
-//   '!src/markup{,/**}',
-//   '!src/scripts{,/**}',
-//   '!src/styles{,/**}'
-// ];
 const staticFiles = [
   './src/.favicon.png',
   './src/data/**/*.*',
