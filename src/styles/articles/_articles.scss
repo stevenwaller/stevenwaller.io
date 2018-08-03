@@ -13,10 +13,14 @@
 
 .article__title-row {
   @include row;
+
+  &:before {
+    content: "";
+    @include columns(2);
+  }
 }
 .article__title-column {
   @include columns(8);
-  @include offset(2);
 }
 .article__title {
   position: relative;

@@ -13,10 +13,13 @@
 
 .work__title-row {
   @include row;
+  &:before {
+    content: "";
+    @include columns(2);
+  }
 }
 .work__title-column {
   @include columns(8);
-  @include offset(2);
 }
 .work__client {
   font-size: 21px;

@@ -1,10 +1,14 @@
 .page-intro {
   @include row;
   margin-bottom: 100px;
+
+  &:before {
+    content: "";
+    @include columns(2);
+  }
 }
 .page-intro__content {
   @include columns(8);
-  @include offset(2);
 }
 .page-intro__title {
   font-size: 105px;
