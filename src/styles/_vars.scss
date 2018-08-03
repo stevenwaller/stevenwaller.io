@@ -9,8 +9,9 @@ $primary: #E9DD2D;
 
 // Fonts
 // -------------------------------------------------------------------------- //
-$sans: 'soleil';
-$serif: 'ff-tisa-web-pro';
+$sans: 'soleil', 'Helvetica Neue', Helvetica, Arial, Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, sans-serif;;
+$serif: 'ff-tisa-web-pro', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+$cond: 'rama-gothic-e', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
 $mono: Consolas, monaco, 'Andale Mono', AndaleMono, 'Lucida Console', 'Lucida Sans Typewriter', 'Bitstream Vera Sans Mono', monospace;
 
 // Easing

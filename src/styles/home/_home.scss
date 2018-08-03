@@ -5,16 +5,21 @@
 .home-section:not(:last-child) {
 }
 
+.home-section--logos {
+  padding-top: 22px;
+}
+
 .home-section__title {
   @include columns(2);
   // flex: 0 0 190px;
   padding-top: 4px;
 
   span {
-    font-size: 20px;
+    font-size: 25px;
     color: $white;
-    font-family: $sans;
-    font-weight: bold;
+    font-family: $cond;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     display: inline-block;
     position: relative;
     padding-bottom: 16px;
@@ -46,12 +51,12 @@
   p {
 
   }
-  ul {
-    list-style: disc;
-  }
-  li {
-    margin: 0 0 14px 30px;
-  }
+}
+.home-section__list {
+  list-style: disc;
+}
+.home-section__item {
+  margin: 0 0 14px 30px;
 }
 
 // Articles
@@ -81,8 +86,7 @@
 
 }
 .home-section__cta-link {
-  font-size: 15px;
-  text-transform: uppercase;
+  font-size: 17px;
   font-family: $sans;
   font-weight: bold;
 }
@@ -91,4 +95,19 @@
   top: -1px;
   fill: $primary;
   margin-left: 8px;
+}
+
+// Logos
+// ----------------------------------------- //
+.home-logos__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -32px;
+}
+.home-logos__item {
+  margin-bottom: 10px;
+}
+.home-logos__logo {
+  fill: $white;
 }

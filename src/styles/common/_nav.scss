@@ -7,7 +7,7 @@
   display: flex;
 }
 .site-nav__item {
-  line-height: 2;
+  line-height: 1.6;
   background-color: $background;
   padding: 0 10px;
 
@@ -16,9 +16,9 @@
   }
 }
 .site-nav__link {
-  font-family: $sans;
-  font-size: 19px;
-  font-weight: bold;
+  font-family: $cond;
+  font-size: 29px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   &.is-active {

@@ -7,13 +7,14 @@
   @include offset(2);
 }
 .page-intro__title {
-  font-size: 76px;
+  font-size: 105px;
   color: $white;
-  font-family: $sans;
+  font-family: $cond;
+  text-transform: uppercase;
   position: relative;
-  font-weight: bold;
   padding-bottom: 16px;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 
   &:after {
     content: "";
