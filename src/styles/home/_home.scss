@@ -51,6 +51,10 @@
   p {
 
   }
+
+  @media (max-width: 1024px) {
+    @include columns(10);
+  }
 }
 .home-section__list {
   list-style: disc;

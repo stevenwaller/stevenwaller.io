@@ -9,6 +9,10 @@
 }
 .page-intro__content {
   @include columns(8);
+
+  @media (max-width: 1024px) {
+    @include columns(10);
+  }
 }
 .page-intro__title {
   font-size: 105px;

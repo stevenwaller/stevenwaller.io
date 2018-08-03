@@ -21,6 +21,10 @@
 }
 .article__title-column {
   @include columns(8);
+
+  @media (max-width: 1024px) {
+    @include columns(10);
+  }
 }
 .article__title {
   position: relative;
@@ -59,6 +63,10 @@
 }
 .article__body {
   @include columns(8);
+
+  @media (max-width: 1024px) {
+    @include columns(10);
+  }
 }
 .article__description {
   line-height: 1.5;
@@ -157,6 +165,10 @@
 
     code {
       padding: 0;
+    }
+
+    @media (max-width: 1024px) {
+      @include columns(10);
     }
   }
   .highlight {
