@@ -53,8 +53,14 @@
 .work__content {
   @include row;
 }
-.work__description {
+
+.work__body {
   @include columns(8);
+}
+
+// Description
+// ----------------------------------------- //
+.work__description {
   line-height: 1.5;
 }
 .work__description-link {
@@ -67,94 +73,38 @@
   top: -1px;
 }
 
-.work__body {
-  @include columns(8);
-  line-height: 1.5;
+// Index
+// ----------------------------------------- //
+.work__index {
+  font-family: $sans;
+  font-weight: bold;
+  font-size: 226px;
+  color: #31312a;
+  line-height: 0;
+  margin: 0 0 0 -9px;
+  line-height: 0.9;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 10px;
-    font-family: $sans;
-    font-weight: bold;
-    color: $white;
-    // color: lighten($text, 10%);
-  }
-
-  h1 {
-
-  }
-  h2 {
-    margin-top: 56px;
-    font-size: 34px;
-  }
-  h3 {
-    margin-top: 31px;
-    font-size: 26px;
-  }
-  h4 {
-
-  }
-  h5 {
-
-  }
-  h6 {
-
-  }
-
-  p, ol, ul {
-    margin-bottom: 29px;
-  }
-
-  p {
-  }
-
-  ol {
-    list-style: decimal;
-  }
-  ul {
-    list-style: disc;
-  }
-  li {
-    margin: 0 0 14px 30px;
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
-  em {
-    font-style: italic;
-  }
-
+// Featured image
+// ----------------------------------------- //
+.work__featured-image {
+  position: relative;
   img {
+    position: relative;
     width: 100%;
-    margin: 10px 0;
   }
-
-  code {
-    font-family: $mono;
-    background-color: lighten($background,9%);
-    padding: 4px 5px 2px;
-    font-size: 18px;
-    // color: lighten($text,9%);
+}
+.work__featured-image--buick-enclave-ragal-tourx {
+  img {
+    transform: scale(1.705);
+    left: 113px;
+    top: -72px
   }
-
-  pre {
-    font-family: $mono;
-    background-color: lighten($background,9%) !important;
-    padding: 14px 18px;
-    margin: 38px 0;
-    overflow: auto;
-
-    span {
-      background-color: lighten($background,9%) !important;
-    }
-
-    code {
-      padding: 0;
-    }
+}
+.work__featured-image--nda-calendar-app {
+  img {
+    transform: scale(1.705);
+    left: 113px;
+    top: -72px
   }
-  .highlight {
-    // background-color: lighten($background, 10%);
-  }
-
 }

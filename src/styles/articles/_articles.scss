@@ -53,8 +53,10 @@
 .article__content {
   @include row;
 }
-.article__description {
+.article__body {
   @include columns(8);
+}
+.article__description {
   line-height: 1.5;
 }
 .article__description-link {

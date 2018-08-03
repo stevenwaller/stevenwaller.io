@@ -1,15 +1,15 @@
 +++
-title = "Enclave, Regal, & TourX"
-date = 2018-04-19T14:54:44-07:00
+title = "Calendar App"
+date = 2018-04-18T14:54:44-07:00
 description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
 draft = false
-nda = false
-client = "Buick"
+nda = true
+client = "NDA"
 year = "2014"
 roles = ["Developer"]
 agency = "Sisu"
 tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker"]
-featured_image = "images/work/buick/featured.png"
+featured_image = "images/work/calendar/featured.png"
 +++
 
 Netlify CMS is an amazing piece of open source software that makes it easy to update content on sites built using static site generators like Hugo or <asdf>.

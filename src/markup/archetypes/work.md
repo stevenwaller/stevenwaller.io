@@ -3,6 +3,7 @@ title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
 description = ""
 draft = false
+nda = false
 client = ""
 year = ""
 roles = []

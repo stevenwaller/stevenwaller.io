@@ -7,11 +7,11 @@
     </div>
   </div>
   <div class="work-list">
-    {{ range .Data.Pages }}
+    {{ range $index, $element := .Data.Pages }}
       <section class="work-list__work work">
         <div class="work__title-row">
           <div class="work__title-column">
-            <h2 class="work__client">{{.Params.client}}</h2>
+            <h2 class="work__client">{{$element.Params.client}}</h2>
             <h1 class="work__title">
               <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a>
             </h1>
@@ -21,26 +21,32 @@
           <aside class="meta">
             <div class="meta__item">
               <h3 class="meta__title">Year</h3>
-              <p class="meta__details">{{.Params.year}}</p>
+              <p class="meta__details">{{$element.Params.year}}</p>
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Roles</h3>
-              {{ range .Params.roles }}
+              {{ range $element.Params.roles }}
                 <p class="meta__details">{{.}}</p>
               {{ end }}
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Agency</h3>
-              <p class="meta__details">{{.Params.agency}}</p>
+              <p class="meta__details">{{$element.Params.agency}}</p>
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Tools</h3>
-              {{ range .Params.tools }}
+              {{ range $element.Params.tools }}
                 <p class="meta__details">{{.}}</p>
               {{ end }}
             </div>
           </aside>
-          <p class="work__description">{{.Description}} <a class="work__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a></p>
+          <div class="work__body">
+            <p class="work__description">{{.Description}} <a class="work__description-link" href="{{$element.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a></p>
+            <p class="work__index">0{{add $index 1}}</p>
+            <p class="work__featured-image work__featured-image--{{$element.File.BaseFileName}}">
+              <img src="{{$element.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+            </p>
+          </div>
         </div>
       </section>
     {{ end }}

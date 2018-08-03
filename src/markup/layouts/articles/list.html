@@ -32,7 +32,9 @@
               </p>
             </div>
           </aside>
-          <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>
+          <div class="article__body">
+            <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>
+          </div>
         </div>
       </section>
     {{ end }}
