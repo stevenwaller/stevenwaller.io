@@ -17,7 +17,7 @@
             </h1>
           </div>
         </div>
-        <div class="work__content">
+        <div class="work__content-row">
           <aside class="meta">
             <div class="meta__item">
               <h3 class="meta__title">Year</h3>
@@ -43,10 +43,12 @@
           <div class="work__body">
             <p class="work__description">{{.Description}} <a class="work__description-link" href="{{$element.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a></p>
             <p class="work__index">0{{add $index 1}}</p>
-            <p class="work__featured-image work__featured-image--{{$element.File.BaseFileName}}">
-              <img src="{{$element.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
-            </p>
           </div>
+        </div>
+        <div class="work__featured-image-row">
+          <p class="work__featured-image work__featured-image--{{$element.File.BaseFileName}}">
+            <img src="{{$element.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+          </p>
         </div>
       </section>
     {{ end }}
