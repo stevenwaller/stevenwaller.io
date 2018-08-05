@@ -13,17 +13,18 @@
 
 .article__title-row {
   @include row;
-
-  &:before {
-    content: "";
-    @include columns(2);
-  }
 }
 .article__title-column {
   @include columns(8);
+  @include offset(2);
 
-  @media (max-width: 1024px) {
+  @media (max-width: $breakMedLarge) {
     @include columns(10);
+  }
+
+  @media (max-width: $breakMed) {
+    @include columns(12);
+    margin-left: 0;
   }
 }
 .article__title {
@@ -64,7 +65,7 @@
 .article__body {
   @include columns(8);
 
-  @media (max-width: 1024px) {
+  @media (max-width: $breakMedLarge) {
     @include columns(10);
   }
 }
@@ -167,7 +168,7 @@
       padding: 0;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: $breakMedLarge) {
       @include columns(10);
     }
   }

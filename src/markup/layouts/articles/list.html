@@ -20,16 +20,17 @@
           <aside class="meta">
             <div class="meta__item">
               <h3 class="meta__title">Date</h3>
-              <p class="meta__details">{{.Date.Format "2006-01-02"}}</p>
+              <ul class="meta__details">
+                <li class="meta__detail">{{.Date.Format "2006-01-02"}}</li>
+              </ul>
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Tags</h3>
-              <p class="meta__details">
-                {{ $length := (len .Params.tags)}}
-                {{ range $index, $tag := .Params.tags }}
-                  {{ $tag }}{{ if not (eq (add $index 1) $length) }},{{ end }}
+              <ul class="meta__details">
+                {{ range .Params.tags }}
+                  <li class="meta__detail">{{.}}</li>
                 {{ end }}
-              </p>
+              </ul>
             </div>
           </aside>
           <div class="article__body">

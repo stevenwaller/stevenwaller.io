@@ -11,7 +11,7 @@
       <section class="work-list__work work">
         <div class="work__title-row">
           <div class="work__title-column">
-            <h2 class="work__client">{{$element.Params.client}}</h2>
+            <h2 class="work__client {{ if $element.Params.nda }}is-nda{{ end }}">{{$element.Params.client}}</h2>
             <h1 class="work__title">
               <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a>
             </h1>
@@ -21,23 +21,31 @@
           <aside class="meta">
             <div class="meta__item">
               <h3 class="meta__title">Year</h3>
-              <p class="meta__details">{{$element.Params.year}}</p>
+              <ul class="meta__details">
+                <li class="meta__detail">{{$element.Params.year}}</li>
+              </ul>
             </div>
             <div class="meta__item">
-              <h3 class="meta__title">Roles</h3>
-              {{ range $element.Params.roles }}
-                <p class="meta__details">{{.}}</p>
-              {{ end }}
+              <h3 class="meta__title">Role</h3>
+              <ul class="meta__details">
+                {{ range $element.Params.roles }}
+                  <li class="meta__detail">{{.}}</li>
+                {{ end }}
+              </ul>
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Agency</h3>
-              <p class="meta__details">{{$element.Params.agency}}</p>
+              <ul class="meta__details">
+                <li class="meta__detail">{{$element.Params.agency}}</li>
+              </ul>
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Tools</h3>
-              {{ range $element.Params.tools }}
-                <p class="meta__details">{{.}}</p>
-              {{ end }}
+              <ul class="meta__details">
+                {{ range $element.Params.tools }}
+                  <li class="meta__detail">{{.}}</li>
+                {{ end }}
+              </ul>
             </div>
           </aside>
           <div class="work__body">

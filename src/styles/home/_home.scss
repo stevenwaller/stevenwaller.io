@@ -52,7 +52,7 @@
 
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $breakMedLarge) {
     @include columns(10);
   }
 }

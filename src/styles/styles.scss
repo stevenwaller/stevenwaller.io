@@ -53,7 +53,7 @@ a {
 
 .site-container {
   max-width: 1380px;
-  padding: 130px 130px;
+  padding: 120px 120px;
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
@@ -70,6 +70,17 @@ a {
     bottom: 65px;
     left: 65px;
     z-index: 1;
+  }
+
+  @media (max-width: $breakMed) {
+    padding: 100px 100px;
+
+    &:after {
+      top: 50px;
+      right: 50px;
+      bottom: 50px;
+      left: 50px;
+    }
   }
 }
 
