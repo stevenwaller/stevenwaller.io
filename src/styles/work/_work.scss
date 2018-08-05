@@ -10,7 +10,7 @@
 .work {
   margin-bottom: 60px;
 
-  @media (max-width: $breakMedLarge) {
+  @media (max-width: $breakMedLrg) {
     // margin-bottom: 0px;
   }
 }
@@ -22,8 +22,9 @@
   @include columns(8);
   @include offset(2);
 
-  @media (max-width: $breakMedLarge) {
+  @media (max-width: $breakLrg) {
     @include columns(10);
+    @include offset(1);
   }
 
   @media (max-width: $breakMed) {
@@ -77,7 +78,7 @@
     top: 0;
     left: 0;
 
-    @media (max-width: $breakMed) {
+    @media (max-width: $breakLrg) {
       position: relative;
     }
   }
@@ -87,8 +88,9 @@
   @include columns(8);
   @include offset(2);
 
-  @media (max-width: $breakMedLarge) {
+  @media (max-width: $breakLrg) {
     @include columns(10);
+    @include offset(1);
   }
 
   @media (max-width: $breakMed) {
@@ -139,7 +141,7 @@
     width: 100%;
   }
 
-  @media (max-width: $breakMed) {
+  @media (max-width: $breakLrg) {
     text-align: center;
     img {
       right: 0;

@@ -18,8 +18,9 @@
   @include columns(8);
   @include offset(2);
 
-  @media (max-width: $breakMedLarge) {
+  @media (max-width: $breakLrg) {
     @include columns(10);
+    @include offset(1);
   }
 
   @media (max-width: $breakMed) {
@@ -62,13 +63,6 @@
 .article__content {
   @include row;
 }
-.article__body {
-  @include columns(8);
-
-  @media (max-width: $breakMedLarge) {
-    @include columns(10);
-  }
-}
 .article__description {
   line-height: 1.5;
 }
@@ -85,6 +79,16 @@
 .article__body {
   @include columns(8);
   line-height: 1.5;
+
+  @media (max-width: $breakLrg) {
+    @include columns(10);
+    @include offset(1);
+  }
+
+  @media (max-width: $breakMed) {
+    @include columns(12);
+    margin-left: 0;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
@@ -166,10 +170,6 @@
 
     code {
       padding: 0;
-    }
-
-    @media (max-width: $breakMedLarge) {
-      @include columns(10);
     }
   }
   .highlight {

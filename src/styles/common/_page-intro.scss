@@ -6,8 +6,9 @@
   @include columns(8);
   @include offset(2);
 
-  @media (max-width: $breakMedLarge) {
+  @media (max-width: $breakLrg) {
     @include columns(10);
+    @include offset(1);
   }
 
   @media (max-width: $breakMed) {

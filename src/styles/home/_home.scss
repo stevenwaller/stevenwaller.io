@@ -34,6 +34,16 @@
     }
   }
 
+  @media (max-width: $breakLrg) {
+    @include columns(10);
+    @include offset(1);
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $breakMed) {
+    @include columns(12);
+    margin-left: 0;
+  }
 }
 
 // Where
@@ -44,16 +54,22 @@
   @include columns(8);
   line-height: 1.5;
 
+  @media (max-width: $breakLrg) {
+    @include columns(10);
+    @include offset(1);
+  }
+
+  @media (max-width: $breakMed) {
+    @include columns(12);
+    margin-left: 0;
+  }
+
   p, ol, ul {
     margin-bottom: 29px;
   }
 
   p {
 
-  }
-
-  @media (max-width: $breakMedLarge) {
-    @include columns(10);
   }
 }
 .home-section__list {
@@ -108,6 +124,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: -32px;
+
+  @media (max-width: $breakLrg) {
+    margin-top: 0;
+  }
 }
 .home-logos__item {
   margin-bottom: 10px;

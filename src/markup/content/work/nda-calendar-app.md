@@ -9,7 +9,7 @@ year = "2014"
 roles = ["Developer"]
 agency = "Sisu"
 tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker", "Canvas", "Butter"]
-featured_image = "images/work/buick/featured-2x.png"
+featured_image = "images/work/create/featured.png"
 +++
 
 Netlify CMS is an amazing piece of open source software that makes it easy to update content on sites built using static site generators like Hugo or <asdf>.
