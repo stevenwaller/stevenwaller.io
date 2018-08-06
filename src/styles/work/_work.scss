@@ -10,8 +10,8 @@
 .work {
   margin-bottom: 60px;
 
-  @media (max-width: $breakMedLrg) {
-    // margin-bottom: 0px;
+  @media (max-width: $breakSml) {
+    margin-bottom: 40px;
   }
 }
 
@@ -32,17 +32,30 @@
     margin-left: 0;
   }
 }
+
+// Client
+// ----------------------------------------- //
 .work__client {
   font-size: 21px;
   font-family: $sans;
   font-weight: bold;
   color: $white;
   margin-bottom: 10px;
+  text-indent: -2px;
 
   &.is-nda {
     text-decoration: line-through;
   }
+
+  @media (max-width: $breakSml) {
+    text-indent: -1px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 }
+
+// Title
+// ----------------------------------------- //
 .work__title {
   position: relative;
   padding-bottom: 29px;
@@ -62,13 +75,22 @@
     height: 2px;
     background-color: $dash;
   }
-}
 
+  @media (max-width: $breakSml) {
+    font-size: 33px;
+    text-indent: -2px;
+    padding-bottom: 16px;
+    margin-bottom: 22px;
+  }
+}
 
 .work__title-link {
   color: $primary;
   font-weight: bold;
 }
+
+// Content
+// ----------------------------------------- //
 .work__content-row {
   @include row;
   position: relative;
@@ -84,6 +106,8 @@
   }
 }
 
+// Body
+// ----------------------------------------- //
 .work__body {
   @include columns(8);
   @include offset(2);
@@ -103,6 +127,11 @@
 // ----------------------------------------- //
 .work__description {
   line-height: 1.5;
+
+  @media (max-width: $breakSml) {
+    line-height: 1.3;
+    margin-bottom: 5px;
+  }
 }
 .work__description-link {
 
@@ -125,16 +154,25 @@
   margin: 0 0 0 -9px;
   line-height: 0.9;
   position: absolute;
+
+  @media (max-width: $breakSml) {
+    display: none;
+  }
 }
 
 // Featured image
 // ----------------------------------------- //
 .work__featured-image-row {
   margin: 0 -66px;
+
+  @media (max-width: $breakSml) {
+    margin: 0 -25px;
+  }
 }
 .work__featured-image {
   text-align: right;
   position: relative;
+
   img {
     position: relative;
     right: -94px;

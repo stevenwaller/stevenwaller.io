@@ -1,12 +1,20 @@
 .home-section {
   @include row;
   margin-bottom: 71px;
+
+  @media (max-width: $breakSml) {
+    margin-bottom: 21px;
+  }
 }
 .home-section:not(:last-child) {
 }
 
 .home-section--logos {
   padding-top: 22px;
+
+  @media (max-width: $breakLrg) {
+    padding-top: 0;
+  }
 }
 
 .home-section__title {
@@ -43,6 +51,18 @@
   @media (max-width: $breakMed) {
     @include columns(12);
     margin-left: 0;
+    padding-top: 0;
+  }
+
+  @media (max-width: $breakSml) {
+    padding-bottom: 16px;
+    span {
+      font-size: 24px;
+      padding-bottom: 12px;
+      &:after {
+
+      }
+    }
   }
 }
 
@@ -53,6 +73,7 @@
   // flex: 0 0 740px;
   @include columns(8);
   line-height: 1.5;
+  margin-bottom: 22px;
 
   @media (max-width: $breakLrg) {
     @include columns(10);
@@ -64,8 +85,12 @@
     margin-left: 0;
   }
 
+  @media (max-width: $breakSml) {
+    line-height: 1.3;
+  }
+
   p, ol, ul {
-    margin-bottom: 29px;
+    // margin-bottom: 22px;
   }
 
   p {
@@ -73,7 +98,8 @@
   }
 }
 .home-section__list {
-  list-style: disc;
+  list-style: circle;
+  margin-bottom: 22px;
 }
 .home-section__item {
   margin: 0 0 14px 30px;
@@ -85,15 +111,22 @@
   margin-top: -5px;
 }
 .home-article-list__article {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .home-article__title {
-
+  @media (max-width: $breakSml) {
+    line-height: 0.9;
+    margin-bottom: 6px;
+  }
 }
 .home-article__title-link {
   font-size: 24px;
   font-family: $sans;
   font-weight: bold;
+
+  @media (max-width: $breakSml) {
+    font-size: 19px;
+  }
 }
 .home-article__date {
   font-style: italic;
@@ -103,12 +136,19 @@
 // CTA
 // ----------------------------------------- //
 .home-section__cta {
-
+  @media (max-width: $breakSml) {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
 }
 .home-section__cta-link {
   font-size: 17px;
   font-family: $sans;
   font-weight: bold;
+
+  @media (max-width: $breakSml) {
+    font-size: 15px;
+  }
 }
 .home-section__cta-icon {
   position: relative;
@@ -131,7 +171,13 @@
 }
 .home-logos__item {
   margin-bottom: 10px;
+  flex: 0 0 50%;
 }
 .home-logos__logo {
   fill: $white;
+  height: auto;
+
+  @media (max-width: $breakSml) {
+    width: 100%;
+  }
 }

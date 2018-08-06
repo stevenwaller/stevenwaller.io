@@ -10,18 +10,35 @@
     @include offset(1);
     margin-bottom: 20px;
     display: flex;
+    padding-top: 0;
   }
 
   @media (max-width: $breakMed) {
     width: 100%;
     margin-left: 0;
   }
+
+  @media (max-width: $breakSml) {
+    display: block;
+    margin-bottom: 22px;
+  }
 }
 .meta__item {
-  margin-bottom: 19px;
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 
   @media (max-width: $breakLrg) {
     margin-right: 30px;
+  }
+
+  @media (max-width: $breakSml) {
+    margin-right: 0;
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 .meta__title {
@@ -35,6 +52,12 @@
     display: inline-block;
     margin-right: 5px;
   }
+
+  @media (max-width: $breakSml) {
+    font-size: 16px;
+    margin-right: 9px;
+    min-width: 44px;
+  }
 }
 .meta__details {
   font-size: 16px;
@@ -43,6 +66,10 @@
     display: inline-block;
     margin-top: 2px;
   }
+
+  @media (max-width: $breakSml) {
+    margin-top: -2px;
+  }
 }
 
 .meta__detail {
@@ -50,7 +77,7 @@
     display: inline-block;
 
     &:not(:last-child){
-      margin-right: 6px;
+      margin-right: 1.5px;
 
       &:after {
         content: ",";

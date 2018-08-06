@@ -30,7 +30,15 @@ body {
   background-color: $background;
   font-size: 20px;
   line-height: 1.1;
-  overflow-x: hidden;
+
+  @media (min-width: $breakSml + 1) {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @media (max-width: $breakSml) {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -82,15 +90,27 @@ a {
       left: 50px;
     }
   }
+
+  @media (max-width: $breakSml) {
+    padding: 50px 25px 40px;
+
+    &:after {
+      top: 27px;
+      right: 15px;
+      bottom: 20px;
+      left: 15px;
+    }
+  }
 }
 
 .site-content {
   position: relative;
   z-index: 2;
-  // height: 100%;
   padding: 30px 0 30px;
-  // border: 1px solid #636049;
-  // min-height: 100%;
+
+  @media (max-width: $breakSml) {
+    padding: 25px 0 0;
+  }
 }
 
 h1 {

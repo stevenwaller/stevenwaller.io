@@ -15,10 +15,29 @@
     right: 90px;
     bottom: 43px;
   }
+
+  @media (max-width: $breakSml) {
+    font-size: 15px;
+    border-top: 1px solid $dash;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    display: block;
+    margin: 0 10px;
+    padding: 25px 0 5px;
+  }
 }
 .site-footer__connect {
   display: flex;
+
+  @media (max-width: $breakSml) {
+    display: block;
+  }
 }
+
+// Option
+// ----------------------------------------- //
 .site-footer__connect-option {
   background-color: $background;
   padding: 0 10px;
@@ -26,12 +45,34 @@
   &:not(:last-child) {
     margin-right: 20px;
   }
+
+  @media (max-width: $breakSml) {
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
 }
+
+// Copyright
+// ----------------------------------------- //
 .site-footer__copyright {
   text-align: right;
   background-color: $background;
   padding: 0 10px;
+
+  @media (max-width: $breakSml) {
+    text-align: left;
+    padding: 0;
+    display: flex;
+  }
 }
+
+// label
+// ----------------------------------------- //
 .site-footer__label {
   font-family: $cond;
   font-size: 20px;
@@ -39,6 +80,16 @@
   text-transform: uppercase;
   color: $white;
   margin-bottom: 2px;
+
+  span {
+    font-family: $sans;
+  }
+
+  @media (max-width: $breakSml) {
+    margin-bottom: 0px;
+    font-size: 16px;
+    margin-right: 9px;
+  }
 }
 .site-footer__item {
 

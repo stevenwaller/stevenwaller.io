@@ -1,9 +1,7 @@
 .site-nav {
-  // display: flex;
-  // align-items: center;
+
 }
 .site-nav__list {
-  // line-height: 0;
   display: flex;
 }
 .site-nav__item {
@@ -14,6 +12,20 @@
   &:not(:first-child) {
     margin-left: 20px;
   }
+
+  @media (max-width: $breakSml) {
+    padding: 0 5px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: $breakXSml) {
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
 }
 .site-nav__link {
   font-family: $cond;
@@ -23,5 +35,13 @@
 
   &.is-active {
     color: $white;
+  }
+
+  @media (max-width: $breakSml) {
+    font-size: 19px;
+  }
+
+  @media (max-width: $breakXSml) {
+    font-size: 18px;
   }
 }

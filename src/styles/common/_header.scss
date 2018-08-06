@@ -12,12 +12,27 @@
     left: 90px;
     right: 90px;
   }
+
+  @media (max-width: $breakSml) {
+    top: 13px;
+    left: 30px;
+    right: 30px;
+  }
 }
 .site-header__logo {
   background-color: $background;
   padding: 0 10px;
   svg {
     fill: $primary;
+    height: auto;
+  }
+
+  @media (max-width: $breakSml) {
+    padding: 0 5px;
+
+    svg {
+      width: 64px;
+    }
   }
 }
 .site-header__logo-link {

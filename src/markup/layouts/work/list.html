@@ -55,7 +55,9 @@
         </div>
         <div class="work__featured-image-row">
           <p class="work__featured-image work__featured-image--{{$element.File.BaseFileName}}">
-            <img src="{{$element.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+            <a href="{{$element.Permalink}}" class="work__featured-image-link">
+              <img src="{{$element.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+            </a>
           </p>
         </div>
       </section>

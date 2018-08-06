@@ -1,6 +1,10 @@
 .page-intro {
   @include row;
   margin-bottom: 100px;
+
+  @media (max-width: $breakSml) {
+    margin-bottom: 50px;
+  }
 }
 .page-intro__content {
   @include columns(8);
@@ -22,8 +26,8 @@
   font-family: $cond;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 16px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
   letter-spacing: 1px;
 
   &:after {
@@ -35,9 +39,23 @@
     height: 4px;
     background-color: $dash;
   }
+
+  @media (max-width: $breakSml) {
+    font-size: 52px;
+    padding-bottom: 11px;
+    margin-bottom: 18px;
+
+    &:after {
+    }
+  }
 }
 .page-intro__description {
   font-size: 28px;
   font-style: italic;
   line-height: 1.4;
+
+  @media (max-width: $breakSml) {
+    font-size: 19px;
+    line-height: 1.2;
+  }
 }
