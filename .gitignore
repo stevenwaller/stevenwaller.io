@@ -48,6 +48,7 @@ _nogit
 .env
 .module-cache
 .tmp
+.temp
 .sass-cache
 node_modules
 build

@@ -1,5 +1,5 @@
-import webpack from 'webpack';
-import path from 'path';
+const webpack = require('webpack');
+const path = require('path');
 
 // Source and Output directories
 // __dirname is the current directory of this file (node.js variable)
@@ -10,7 +10,7 @@ const outputPath = path.join(__dirname, './dist/js');
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProd = nodeEnv === 'production';
 
-export default {
+module.exports = {
   // Mode
   // ----------------------------------------------------------- //
   mode: nodeEnv,
@@ -39,9 +39,7 @@ export default {
   //   fileNameTwo: './anotherFile.js'
   // }
   entry: {
-    scripts: [
-      './scripts/scripts.js'
-    ]
+    scripts: ['./scripts/scripts.js']
   },
 
   // Output
@@ -61,19 +59,11 @@ export default {
   // e.g. import React from 'react';
   resolve: {
     // Define file extensions so you can leave them off when importing
-    extensions: [
-      '.webpack-loader.js',
-      '.web-loader.js',
-      '.loader.js',
-      '.js'
-    ],
+    extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js'],
 
     // Tell webpack where to find files
     // Allows you to include them without the full path
-    modules: [
-      path.resolve(__dirname, 'node_modules'),
-      sourcePath
-    ],
+    modules: [path.resolve(__dirname, 'node_modules'), sourcePath],
 
     // Manually tell webpack where older library files are
     // so they will work with modern imports like:
@@ -83,7 +73,10 @@ export default {
       // See loader below
       modernizr$: path.resolve(__dirname, '.modernizrrc'),
       postal: path.resolve('node_modules', 'postal/lib/postal.lodash.js'),
-      Easing: path.resolve('node_modules', 'gsap/src/uncompressed/easing/EasePack.js')
+      Easing: path.resolve(
+        'node_modules',
+        'gsap/src/uncompressed/easing/EasePack.js'
+      )
     }
   },
 
@@ -133,7 +126,7 @@ export default {
         test: /\.modernizrrc(\.json)?$/,
         exclude: /node_modules/,
         use: ['modernizr-loader', 'json-loader']
-      },
+      }
     ]
   },
 
@@ -143,13 +136,5 @@ export default {
     // Hash module IDs so changing local imports won't effect the vendor file's cache
     // https://webpack.js.org/guides/caching/
     new webpack.HashedModuleIdsPlugin()
-  ],
-
-  // Stats
-  // ----------------------------------------------------------- //
-  stats: {
-    colors: {
-      green: '\u001b[32m'
-    }
-  }
+  ]
 };
