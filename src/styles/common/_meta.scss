@@ -3,7 +3,7 @@
 .meta {
   @include columns(2);
   line-height: 1.3;
-  padding-top: 5px;
+  padding-top: 8px;
 
   @media (max-width: $breakLrg) {
     @include columns(10);
