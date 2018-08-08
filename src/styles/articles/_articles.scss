@@ -94,6 +94,9 @@
 }
 .article__content {
   @include row;
+  .article__column:first-of-type > *:first-child {
+    margin-top: 0;
+  }
 }
 .article__description {
   line-height: 1.5;
