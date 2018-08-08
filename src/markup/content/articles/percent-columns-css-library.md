@@ -154,11 +154,25 @@ You can keep dividing columns into smaller and smaller increments by nesting col
 
 ## How to use
 
-[Download the CSS file](/files/percent-column-system-min.css), upload it to your website and add the following code to the header of your HTML page and *BOOM* you are good to go, no need for reset files or anything else.
+[Download the CSS file](/files/percent-columns/percent-column-system-min.css), upload it to your website and add the following code to the header of your HTML page and *BOOM* you are good to go, no need for reset files or anything else.
 
 ```html
 <link href="percent-column-system.css" media="screen" type="text/css" rel="stylesheet">
 ```
+
+#### Download CSS
+
+- [Compressed (1.98kb)](/files/percent-columns/percent-column-system-min.css)
+- [Uncompressed (3.98kb)](/files/percent-columns/percent-column-system.css)
+
+#### Examples
+
+- [Basic column options](/files/percent-columns/example-1.html)
+- [Layout with content](/files/percent-columns/example-2.html)
+
+#### License
+
+The % Columns CSS library is free to use and you can re-purpose it to suit your needs. Licensed under [GPL](http://www.gnu.org/licenses/gpl.html) and [MIT](http://www.opensource.org/licenses/mit-license.php).
 
 {{% /md %}}
 </div>

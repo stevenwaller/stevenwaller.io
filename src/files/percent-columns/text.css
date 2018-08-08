@@ -1,0 +1,179 @@
+/*
+	960 Grid System ~ Text CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+a:focus {
+	outline: 1px dotted invert;
+}
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h4,
+h6{
+	color:#443a25;
+	font-weight:bold;
+	margin-top:30px;
+}
+h1 {
+	font-size: 36px;
+	line-height:1;
+	font-weight:normal;
+	font-style:inherit;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+h1 a:link,
+h1 a:visited,
+h2 a:link,
+h2 a:visited, 
+h3 a:link, 
+h3 a:visited, 
+h4 a:link,
+h4 a:visited,
+h5 a:link, 
+h5 a:visited, 
+h6 a:link, 
+h6 a:visited{
+	color:#446a10;
+	text-decoration:none;
+}
+h1 a:hover,
+h1 a:active,
+h2 a:hover,
+h2 a:active,
+h3 a:hover,
+h3 a:active,
+h4 a:hover, 
+h4 a:active,
+h5 a:hover, 
+h5 a:active, 
+h6 a:hover,
+h6 a:active{
+	color:#446a10;
+	text-decoration:none;
+}
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal;
+	margin-left:30px;
+}
+
+ul {
+	list-style: square;
+	margin-left:30px;
+}
+
+li {
+	list-style-position:outside;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+blockquote{
+	margin-bottom: 20px;
+}
+
+ul ul{
+	margin-bottom:0;
+}
+
+/* General Elements
+----------------------------------------------------------------------------------------------------*/
+strong {
+	font-weight:bold;
+	color:#446A10;
+	}	
+em {
+	font-style:italic;
+}
+a:link, a:visited { 
+	text-decoration:underline; 
+	color:#0f75ba; 
+	}	
+a:hover, a:active { 
+	text-decoration:none;
+	color:#0f75ba;
+	}	
+button {
+	text-transform:uppercase;
+	color:#fff;
+	}
+img, input, select, label {
+	vertical-align:middle;
+	}
+button {
+	margin:0; 
+	padding:0;
+	border:none;
+	text-align:center;
+	text-transform:uppercase;
+	background:transparent;
+	cursor:pointer;
+	}	
+address span {
+	display:block;
+	margin:0 0 10px 0;
+	}	
+blockquote{
+	background:transparent url(images/blockquote.gif) no-repeat scroll 2px top;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size:14px;
+	padding-left:40px;
+	float:left;
+}

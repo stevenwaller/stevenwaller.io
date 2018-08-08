@@ -1,0 +1,215 @@
+/*
+	PERCENT GRID SYSTEM
+	By:Steven Waller
+*/
+/* Reset
+----------------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+blockquote{
+	margin-bottom: 20px;
+}
+
+/* Typography
+----------------------------------------------------------------------------------------------------*/
+body {
+	font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h4,
+h6{
+	color:#443a25;
+	font-weight:bold;
+	margin-top:30px;
+}
+h1 {
+	font-size: 36px;
+	line-height:1;
+	font-weight:normal;
+	font-style:inherit;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+h1 a:link,
+h1 a:visited,
+h2 a:link,
+h2 a:visited, 
+h3 a:link, 
+h3 a:visited, 
+h4 a:link,
+h4 a:visited,
+h5 a:link, 
+h5 a:visited, 
+h6 a:link, 
+h6 a:visited{
+	color:#446a10;
+	text-decoration:none;
+}
+h1 a:hover,
+h1 a:active,
+h2 a:hover,
+h2 a:active,
+h3 a:hover,
+h3 a:active,
+h4 a:hover, 
+h4 a:active,
+h5 a:hover, 
+h5 a:active, 
+h6 a:hover,
+h6 a:active{
+	color:#446a10;
+	text-decoration:none;
+}
+strong {
+	font-weight:bold;
+	color:#446A10;
+}	
+em {
+	font-style:italic;
+}
+a:link, a:visited { 
+	text-decoration:underline; 
+	color:#0f75ba; 
+}	
+a:hover, a:active { 
+	text-decoration:none;
+	color:#0f75ba;
+}
+
+
+/* Background
+----------------------------------------------------------------------------------------------------*/
+body{
+	background:#fff;
+}
+#container{
+	background:#fff;
+	overflow:hidden;
+	margin:0px auto 30px auto;
+	width:940px;
+	padding:0px;
+}
+
+
+#header{
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	background:#000;
+	
+}
+	#header h1{
+		font-weight:bold;
+		color:#fff;
+		margin-top:20px;
+		padding-left:20px;
+		border-top:none;
+	}
+	
+#footer{
+	height:40px;
+	background:#000;
+}
+
+h1,
+h2,
+h3,
+h4{
+	border-top:2px solid #666;
+}
+.col_1_2,
+.col_2_2,
+.col_1_3,
+.col_2_3,
+.col_3_3,
+.col_1-2_3,
+.col_2-3_3,
+.col_1_4,
+.col_2_4,
+.col_3_4,
+.col_4_4,
+.col_1-2_4,
+.col_2-3_4,
+.col_3-4_4,
+.col_1-3_4,
+.col_2-4_4,
+.col_1_5,
+.col_2_5,
+.col_3_5,
+.col_4_5,
+.col_5_5,
+.col_1-2_5,
+.col_2-3_5,
+.col_3-4_5,
+.col_4-5_5,
+.col_1-3_5,
+.col_2-4_5,
+.col_3-5_5,
+.col_1-4_5,
+.col_2-5_5{
+	
+}
+.content{
+	
+}
+/* Misc
+----------------------------------------------------------------------------------------------------*/
+.align-right{
+	float:right;
+	margin:0 0 10px 20px;
+}
+.align-left{
+	float:left;
+	margin:0 20px 10px 0;
+}
