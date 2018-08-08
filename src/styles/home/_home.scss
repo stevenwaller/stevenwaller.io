@@ -171,13 +171,18 @@
 }
 .home-logos__item {
   margin-bottom: 10px;
-  flex: 0 0 50%;
+  text-align: center;
+  flex: 1 1 auto;
+
+  @media (max-width: $breakSml) {
+    flex-basis: 50%;
+  }
 }
 .home-logos__logo {
   fill: $white;
   height: auto;
 
   @media (max-width: $breakSml) {
-    width: 100%;
+    max-width: 100%;
   }
 }
