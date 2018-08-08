@@ -1,10 +1,13 @@
 +++
-title = "How to use Netlify CMS with GitHub OAuth — Without using Netlify’s CDN"
+title = "How to use Netlify CMS & GitHub OAuth — Without using Netlify’s CDN"
 date = 2018-04-18T14:54:44-07:00
 description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
 draft = false
-tags = ["CSS", "Dev"]
+tags = []
 +++
+
+<div class="markdown article__column">
+{{% md %}}
 
 Netlify CMS is an amazing piece of open source software that makes it easy to update content on sites built using static site generators like Hugo or <asdf>.
 
@@ -143,3 +146,6 @@ collections:
 `collections`: I won’t go into details
 
 There are a lot of other configuration options you should explore, but they don’t have anything to do with authentication.
+
+{{% /md %}}
+</div>

@@ -6,7 +6,7 @@
       <p class="page-intro__description">{{.Description}}</p>
     </div>
   </div>
-  <div class="article-list">
+  <div class="article-list article-list--short">
     {{ range .Data.Pages }}
       <section class="article-list__article article">
         <div class="article__title-row">
@@ -24,6 +24,7 @@
                 <li class="meta__detail">{{.Date.Format "2006-01-02"}}</li>
               </ul>
             </div>
+            {{ if .Params.tags }}
             <div class="meta__item meta__item--tags">
               <h3 class="meta__title">Tags</h3>
               <ul class="meta__details">
@@ -32,6 +33,7 @@
                 {{ end }}
               </ul>
             </div>
+            {{ end }}
           </aside>
           <div class="article__body">
             <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>

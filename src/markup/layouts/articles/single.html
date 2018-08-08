@@ -1,27 +1,30 @@
 {{ partial "start-page" . }}
-<section class="article-list__article article">
-  <div class="article__title-row">
-    <div class="article__title-column">
-      <h1 class="article__title">{{.Title}}</h1>
+<section class="article-list article-list--single">
+  <div class="article-list__article article">
+    <div class="article__title-row">
+      <div class="article__title-column">
+        <h1 class="article__title">{{.Title}}</h1>
+      </div>
     </div>
-  </div>
-  <div class="article__content">
-    <aside class="meta">
-      <div class="meta__item">
-        <h3 class="meta__title">Date</h3>
-        <p class="meta__details">{{.Date.Format "2006-01-02"}}</p>
-      </div>
-      <div class="meta__item">
-        <h3 class="meta__title">Tags</h3>
-        <p class="meta__details">
-          {{ $length := (len .Params.tags)}}
-          {{ range $index, $tag := .Params.tags }}
-            {{ $tag }}{{ if not (eq (add $index 1) $length) }},{{ end }}
-          {{ end }}
-        </p>
-      </div>
-    </aside>
-    <div class="article__body">{{ .Content }}</div>
+    <div class="article__content">
+      <aside class="meta">
+        <div class="meta__item">
+          <h3 class="meta__title">Date</h3>
+          <p class="meta__details">{{.Date.Format "2006-01-02"}}</p>
+        </div>
+        {{ if .Params.tags }}
+          <div class="meta__item meta__item--tags">
+            <h3 class="meta__title">Tags</h3>
+            <ul class="meta__details">
+              {{ range .Params.tags }}
+                <li class="meta__detail">{{.}}</li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </aside>
+      {{ .Content }}
+    </div>
   </div>
 </section>
 

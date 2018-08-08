@@ -8,7 +8,7 @@
   @media (max-width: $breakLrg) {
     @include columns(10);
     @include offset(1);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     padding-top: 0;
   }
@@ -20,7 +20,7 @@
 
   @media (max-width: $breakSml) {
     display: block;
-    margin-bottom: 22px;
+    // margin-bottom: 22px;
   }
 }
 .meta__item {

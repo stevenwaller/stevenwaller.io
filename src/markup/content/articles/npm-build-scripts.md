@@ -3,8 +3,11 @@ title = "Npm Build Scripts"
 date = 2018-08-01T16:18:52-07:00
 description = "Build site using NPM scripts without Gulp or Grunt"
 draft = false
-tags = ["CSS", "Dev"]
+tags = []
 +++
+
+<div class="markdown article__column">
+{{% md %}}
 
 Yes make files are amazing, but JS all the things.
 Yes Webpack is amazing, but you have to jump through a lot of hoops if it's not a single page site. (How to render multiple static, HTML files)
@@ -65,3 +68,5 @@ Use the watch functionality provided by each package for faster results.
 - Add a few scripts for more complex stuff.
 - If you find yourself writing to many scripts, maybe it's time to reach for Gulp
 
+{{% /md %}}
+</div>
