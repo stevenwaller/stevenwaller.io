@@ -1,5 +1,5 @@
 body .gist {
-  font-size:18px;
+  font-size:17px;
 
   @media (max-width: $breakSml) {
     font-size: 15px;
@@ -27,9 +27,9 @@ body .gist {
 
   .blob-num,
   .blob-code-inner {
-    font-size: 18px;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
+    font-size: 17px;
+    padding-top: 0px !important;
+    padding-bottom: 1px !important;
 
     @media (max-width: $breakSml) {
       font-size: 15px !important;
