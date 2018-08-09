@@ -1,0 +1,25 @@
+.comp-presenter__table {
+  min-width: 600px;
+}
+
+.comp-presenter__example {
+  display: flex;
+}
+.comp-presenter__example-code {
+  padding-right: $halfGutterWidth;
+}
+.comp-presenter__example-preview {
+  padding-left: $halfGutterWidth;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    margin: 0;
+  }
+}

@@ -1,0 +1,84 @@
+/*
+	COMP-PRESENTER JQUERY PLUGIN CSS
+	by:Steven Waller
+	http://blog.stevendesigns.com/comp-presenter-jquery-plugin/
+	The Comp-Presenter jQuery plugin is free to use and you can re-purpose it to suit your needs. Licensed under GPL and MIT
+*/
+.comp-header{
+	position:absolute;
+	z-index:10;
+	width:100%;
+	height:100px;
+	overflow:hidden;
+	zoom:1;
+	background:url(non-existant) repeat left top;/*strange ie hack to get the hover to work. Doesn't actually load on image*/
+}
+	.comp-header-bar{
+		background:#000;
+		filter:alpha(opacity=85);
+		-moz-opacity:0.85;
+		-khtml-opacity: 0.85;
+		opacity: 0.85;
+	}
+		.comp-header-content{
+			width:940px;
+			margin:0 auto;
+			overflow:hidden;
+			height:45px;
+		}
+			.comp-header h1{
+				float:left;
+				width:70%;
+				font-size:18px;
+				font-weight:bold;
+				color:#fff;
+				margin:0;
+				padding:0;
+				line-height:45px;
+			}
+				.comp-header h1 span{
+					padding-left:10px;
+					font-size:14px;
+					color:#CCC;
+				}
+			.comp-controls{
+				float:right;
+			}
+				.comp-controls .comp-paging{
+					color:#999;
+					padding-right:10px;
+				}
+				.comp-controls a:link,
+				.comp-controls a:visited{
+					color:#fff;
+					text-decoration:none;
+					text-transform:uppercase;
+					font-weight:bold;
+					font-size:11px;
+					display:inline-block;
+					height:45px;
+					line-height:45px;
+					padding:0 10px;
+				}
+				.comp-controls a:hover,
+				.comp-controls a:active{
+					background:#666;
+				}
+					.comp-controls a span{
+						font-size:13px;
+					}
+.comp-viewport{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	position:relative;
+	z-index:5;
+}
+	.comp-viewport li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		position:absolute;
+		line-height:1;
+		display:none;
+	}
