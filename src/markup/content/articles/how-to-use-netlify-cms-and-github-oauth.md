@@ -2,7 +2,7 @@
 title = "How to use Netlify CMS & GitHub OAuth — Without using Netlify’s CDN"
 date = 2018-04-18T14:54:44-07:00
 description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
-draft = false
+draft = true
 tags = []
 +++
 

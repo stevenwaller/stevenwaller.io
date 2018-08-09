@@ -2,7 +2,7 @@
 title = "Npm Build Scripts"
 date = 2018-08-01T16:18:52-07:00
 description = "Build site using NPM scripts without Gulp or Grunt"
-draft = false
+draft = true
 tags = []
 +++
 
