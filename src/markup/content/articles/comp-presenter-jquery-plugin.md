@@ -54,7 +54,7 @@ Back in the header of the HTML file add the following code below the code we add
 
 ```html
 <script type="text/javascript">
-	$(document).ready(function(){
+	$(document).ready(function() {
 		$("#slideshow").compPresenter();
 	});
 </script>
