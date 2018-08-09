@@ -1,0 +1,48 @@
+.example{
+	width:160px;
+	margin-bottom:20px;
+}
+	.example h3{
+		margin-bottom:0;
+	}
+	.example p{
+		margin-bottom:5px;
+	}
+	.example .invisible-btn{
+		width:100px;
+		height:100px;
+		position:absolute;
+		z-index:2;
+		overflow:hidden;
+	}
+	.one .invisible-btn{
+		background-color:#000;
+	}
+	.two .invisible-btn{
+		border:1px solid #000;
+	}
+	.three .invisible-btn{
+
+	}
+	.four .invisible-btn{
+
+	}
+	.five .invisible-btn{
+		background-image:url(bg-pattern.gif);
+	}
+	.six .invisible-btn{
+		background-image:url(hack);
+	}
+	.example .with-background{
+		width:160px;
+		height:160px;
+		background-color:#9bc0b3;
+	}
+	.example .alert-box{
+		text-align:center;
+	}
+	.example .hover{
+		color:red;
+		font-weight:bold;
+	}
+

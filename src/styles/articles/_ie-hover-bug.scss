@@ -1,0 +1,77 @@
+.ie-hover-bug__example-container {
+  display: flex;
+	// justify-content: space-between;
+
+	@media (max-width: 840px) {
+		display: block;
+	}
+}
+
+.example{
+	max-width: 220px;
+	flex: 1 1 auto;
+
+	@media (max-width: 840px) {
+		margin-bottom: 40px;
+	}
+}
+	.example h3{
+    font-size: 20px;
+		margin-bottom:10px;
+	}
+	.example p{
+    font-size: 16px;
+		margin-bottom:15px;
+	}
+	.example .invisible-btn{
+		width:100px;
+		height:100px;
+		position:absolute;
+		z-index:2;
+		overflow:hidden;
+	}
+	.one .invisible-btn{
+		background-color:#000;
+	}
+	.two .invisible-btn{
+		border:1px solid #000;
+	}
+	.three .invisible-btn{
+
+	}
+	.four .invisible-btn{
+
+	}
+	.five .invisible-btn{
+		background-image:url(bg-pattern.gif);
+	}
+	.six .invisible-btn{
+		background-image:url(hack);
+	}
+	.example .with-background{
+		width:160px;
+		height:160px;
+		background-color:#9bc0b3;
+	}
+	.example .alert-box{
+    text-align:center;
+		font-size: 16px;
+		max-width: 160px;
+		margin: 0 auto;
+	}
+	.example .hover{
+		color:red;
+		font-weight:bold;
+  }
+  .example .visible-box {
+		// max-width: 160px;
+  }
+  .example .visible-box img {
+    margin: 0;
+	}
+
+	.example__img-wrapper {
+		max-width: 160px;
+	}
+
+
