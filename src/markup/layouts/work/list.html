@@ -12,7 +12,8 @@
         <div class="work__title-row">
           <div class="work__title-column">
             <h1 class="work__title">
-              <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a>
+              {{.Title}}
+              <!-- <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a> -->
             </h1>
           </div>
         </div>
@@ -50,7 +51,7 @@
             </div>
           </aside>
           <div class="work__body">
-            <p class="work__description">{{.Description}} <a class="work__description-link" href="{{$element.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a></p>
+            <p class="work__description">{{.Description}} <!--<a class="work__description-link" href="{{$element.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a>--></p>
             <p class="work__index">0{{add $index 1}}</p>
           </div>
         </div>
