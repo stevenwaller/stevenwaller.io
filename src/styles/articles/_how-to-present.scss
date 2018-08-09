@@ -1,0 +1,8 @@
+.how-to-present__container {
+  display: flex;
+  margin: 0 -$halfGutterWidth;
+}
+.how-to-present__column {
+  flex: 0 0 50%;
+  padding: $halfGutterWidth;
+}
