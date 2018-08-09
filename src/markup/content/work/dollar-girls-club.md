@@ -1,13 +1,13 @@
 +++
 title = "Dollar Girls Club"
 date = 2018-04-14T14:54:44-07:00
-description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
+description = "Vue SPA."
 draft = false
 nda = false
 client = "Dollar Girls Club"
-year = "2014"
+year = "2016"
 roles = ["Developer"]
 agency = "Sisu"
-tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker", "Canvas", "Butter"]
+tools = ["Vue", "Docker", "Webpack"]
 featured_image = "images/work/dollar-girls-club/featured.png"
 +++

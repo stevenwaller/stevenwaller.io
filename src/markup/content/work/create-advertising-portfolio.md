@@ -1,13 +1,13 @@
 +++
 title = "Create Advertising"
 date = 2018-04-17T14:54:44-07:00
-description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
+description = "WordPress powered site using Trellis to manage server provisioning and deployment. Portfolio grid combining React with Isotype.js and a Vimeo player with custom controls"
 draft = false
 nda = false
 client = "Create Advertising"
-year = "2014"
-roles = ["Developer"]
+year = "2018"
+roles = ["Developer", "Designer"]
 agency = "Sisu"
-tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker", "Canvas", "Butter"]
+tools = ["WordPress", "React", "Isotope.js", "Trellis", "Vimeo"]
 featured_image = "images/work/create/featured.png"
 +++

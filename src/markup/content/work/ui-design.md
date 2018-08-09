@@ -1,13 +1,13 @@
 +++
 title = "UI Design"
 date = 2018-04-13T14:54:44-07:00
-description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
+description = "I started off as a designer and while I haven't done as much lately I still haven't lost my eye."
 draft = false
 nda = false
 client = "Various"
-year = "2014"
+year = "All"
 roles = ["Developer"]
 agency = "Sisu"
-tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker", "Canvas", "Butter"]
+tools = ["PhotoShop", "Sketch", "Invision"]
 featured_image = "images/work/ui-design/featured.png"
 +++

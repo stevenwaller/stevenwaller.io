@@ -1,13 +1,13 @@
 +++
 title = "Calendar App"
 date = 2018-04-18T14:54:44-07:00
-description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
+description = "React SPA powered by a Node/Express/MongoDB back-end. Developed and tested to work on the Microsoft Surface Hub. Create and manage events while syncing them in real time using Socket.IO"
 draft = false
 nda = true
 client = "NDA"
-year = "2014"
-roles = ["Developer"]
+year = "2017"
+roles = ["Developer", "Designer"]
 agency = "Sisu"
-tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js", "Docker", "Canvas", "Butter"]
+tools = ["React", "React-DnD", "Express", "Socket.IO", "MongoDB", "Jenkins", "Docker"]
 featured_image = "images/work/calendar/featured.png"
 +++
