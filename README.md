@@ -23,6 +23,7 @@ My professional online presence.
 
 1. Install [Node v6.9+](https://nodejs.org/en/) globally if you don't have it already
 1. Install [Yarn](https://yarnpkg.com/) globally if you don't have it already
+1. Install [Hugo](https://gohugo.io/getting-started/quick-start/) globally if you don't have it already
 1. Clone or download this repo
 1. Using terminal change directories to the project root `cd /path/to/hugo-starter`
 1. Install dependencies by running `yarn`
@@ -42,7 +43,6 @@ My professional online presence.
 
 ## Project Structure
 
-- **bin** - Hugo binary files. (Darwin == Mac). Included so build works with Netlify.
 - **dist** - Files compiled by the Gulp/Hugo build pipeline
 - **i18n** - Hugo multilingual configurations
 - **src** - Files that will pass through the Gulp/Hugo build pipeline and be output in the `dist` directory
