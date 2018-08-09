@@ -1,5 +1,5 @@
 +++
-title = "Percent Columns CSS Library"
+title = "% Columns CSS Library"
 date = 2010-04-13T17:03:12-07:00
 description = "The goal of this system is to allow users to easily divide content into two, three, four or five columns based upon percentages; with the ability to then divide each column further."
 draft = false
