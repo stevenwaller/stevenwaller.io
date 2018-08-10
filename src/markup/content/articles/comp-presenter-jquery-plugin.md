@@ -36,7 +36,7 @@ Add the following code to the header of a new HTML page. Note, I am using the Mi
 
 ```html
 <link rel="stylesheet" type="text/css" media="screen" href="comp-presenter.css" />
-<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script src="jquery.comp-presenter-min.js" type="text/javascript"></script>
 ```
 
