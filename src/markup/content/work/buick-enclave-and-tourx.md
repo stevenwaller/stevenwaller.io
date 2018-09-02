@@ -1,7 +1,7 @@
 +++
 title = "Buick: Enclave & TourX"
 date = 2018-04-21T14:54:44-07:00
-description = "React SPA. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
+description = "Led development in multi-agency effort to introduce consumers to Buick’s reinvented brand and cars through micro-sites utilizing interactive 3D rendered video assets. Uses HTML5 Canvas to combine and overlay videos, image stills, and PNG animated sequences. Setup to be easily configurable using JSON files."
 draft = false
 nda = false
 client = "Buick"

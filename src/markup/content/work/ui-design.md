@@ -1,7 +1,7 @@
 +++
 title = "UI Design"
 date = 2018-04-13T14:54:44-07:00
-description = "I started off as a designer and while I haven't done as much lately I still haven't lost my eye."
+description = "Designed Sony.com, Paramount.com, Starz.com, Fearnet.com, and more."
 draft = false
 nda = false
 client = "Various"

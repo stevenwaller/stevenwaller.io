@@ -1,7 +1,7 @@
 +++
 title = "Western Union: MyWU"
 date = 2018-04-15T14:54:44-07:00
-description = "An Angular app built to help users sign up for MyWU, earn points, and redeem offers. Integrates with Western Unions existing authentication system"
+description = "Worked closely with development partner to build an Angular app for Western Union's global membership program that was deployed to 35+ countries. Registered users row 100% and redemptions 150%. Won WU Lion “Breakthrough of the Year”."
 draft = false
 nda = false
 client = "Western Union"
