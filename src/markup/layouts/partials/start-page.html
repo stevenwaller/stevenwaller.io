@@ -9,9 +9,9 @@
       {{- if .IsHome -}}
       {{ .Site.Title }}
       {{- else if eq .Kind "taxonomy" -}}
-      {{ .Data.Singular | title }}: {{ .Title }} - {{ .Site.Title }}
+      {{ .Site.Title }} › {{ .Data.Singular | title }}
       {{- else if ( or .IsNode .IsPage ) -}}
-      {{ .Title }} - {{ .Site.Title }}
+      {{ .Site.Title }} › {{ .Title }}
       {{- end -}}
     </title>
 
