@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script src="/files/ie-hover-bug/post.js" type="text/javascript"></script>
 
 <div class="markdown article__column">
@@ -22,7 +22,7 @@ While working on the [Comp-Presenter jQuery Plugin](/articles/comp-presenter-jqu
     <p class="small">With background color</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box"><img src="http://blog.stevendesigns.com/files/hover-bug/bg.gif"></div>
+      <div class="visible-box"><img src="/files/ie-hover-bug/bg.gif"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
@@ -31,7 +31,7 @@ While working on the [Comp-Presenter jQuery Plugin](/articles/comp-presenter-jqu
     <p class="small">With Border</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box"><img src="http://blog.stevendesigns.com/files/hover-bug/bg.gif"></div>
+      <div class="visible-box"><img src="/files/ie-hover-bug/bg.gif"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
@@ -40,7 +40,7 @@ While working on the [Comp-Presenter jQuery Plugin](/articles/comp-presenter-jqu
     <p class="small">Invisible</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box"><img src="http://blog.stevendesigns.com/files/hover-bug/bg.gif"></div>
+      <div class="visible-box"><img src="/files/ie-hover-bug/bg.gif"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
@@ -65,7 +65,7 @@ I have tried using [every know fix to the haslayout bug](http://www.satzansatz.d
     <p class="small">With background image</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box with-background"><img src="http://blog.stevendesigns.com/files/hover-bug/bg.gif"></div>
+      <div class="visible-box with-background"><img src="/files/ie-hover-bug/bg.gif"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
@@ -87,7 +87,7 @@ After a lot of trial and error I found a solution that makes IE render the box c
     <p class="small">With background hack</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box with-background"><img src="http://blog.stevendesigns.com/files/hover-bug/bg.gif"></div>
+      <div class="visible-box with-background"><img src="/files/ie-hover-bug/bg.gif"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
