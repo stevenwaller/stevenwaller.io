@@ -20,7 +20,7 @@ The easiest thing to do is save a flattened comp of the design as a jpg and emai
 - If you have a large margin around the site it may not appear centered in the client’s image viewer.
 - If the design goes through multiple revisions client might get confused about which image is the latest version
 
-<img src="/files/how-to-present/ms-paint.jpg" alt="MS Paint">
+<img src="/files/how-to-present/ms-paint.jpg" alt="MS Paint" class="img-max-width">
 
 *Don't let MS Paint happen to you!*
 
@@ -36,7 +36,7 @@ I have found the best option is to add the image in an HTML file and upload it t
 
 The only real downside to this is some clients will think that it is a functioning website and wonder why the navigation doesn’t work. *sigh* Well you can’t in them all…
 
-<img src="/files/how-to-present/ms-paint.jpg" alt="MS Paint">
+<img src="/files/how-to-present/firefox.jpg" alt="MS Paint" class="img-max-width">
 
 ## How To
 

@@ -65,7 +65,7 @@ I have tried using [every know fix to the haslayout bug](http://www.satzansatz.d
     <p class="small">With background image</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box with-background"><img src="/files/ie-hover-bug/bg.gif"></div>
+      <div class="visible-box with-background"><img src="/files/ie-hover-bug/bg.gif" alt="half tone background pattern"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
@@ -87,7 +87,7 @@ After a lot of trial and error I found a solution that makes IE render the box c
     <p class="small">With background hack</p>
     <div class="example__img-wrapper">
       <div class="invisible-btn"></div>
-      <div class="visible-box with-background"><img src="/files/ie-hover-bug/bg.gif"></div>
+      <div class="visible-box with-background"><img src="/files/ie-hover-bug/bg.gif" alt="half tone background pattern"></div>
       <div class="alert-box">Normal</div>
     </div>
   </div>
