@@ -7,13 +7,12 @@
     </div>
   </div>
   <div class="work-list">
-    {{ range $index, $element := .Data.Pages }}
+    {{ range .Data.Pages }}
       <section class="work-list__work work">
         <div class="work__title-row">
           <div class="work__title-column">
             <h1 class="work__title">
-              {{.Title}}
-              <!-- <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a> -->
+              <a class="work__title-link" href="{{.Permalink}}">{{.Title}}</a>
             </h1>
           </div>
         </div>
@@ -22,42 +21,42 @@
             <div class="meta__item">
               <h3 class="meta__title">Year</h3>
               <ul class="meta__details">
-                <li class="meta__detail">{{$element.Params.year}}</li>
+                <li class="meta__detail">{{.Params.year}}</li>
               </ul>
             </div>
             <div class="meta__item">
               <h3 class="meta__title">Role</h3>
               <ul class="meta__details">
-                {{ range $element.Params.roles }}
+                {{ range .Params.roles }}
                   <li class="meta__detail">{{.}}</li>
                 {{ end }}
               </ul>
             </div>
-            {{ if $element.Params.agency }}
+            {{ if .Params.agency }}
             <div class="meta__item">
               <h3 class="meta__title">Agency</h3>
               <ul class="meta__details">
-                <li class="meta__detail">{{$element.Params.agency}}</li>
+                <li class="meta__detail">{{.Params.agency}}</li>
               </ul>
             </div>
             {{ end }}
             <div class="meta__item">
               <h3 class="meta__title">Tools</h3>
               <ul class="meta__details">
-                {{ range $element.Params.tools }}
+                {{ range .Params.tools }}
                   <li class="meta__detail">{{.}}</li>
                 {{ end }}
               </ul>
             </div>
           </aside>
           <div class="work__body">
-            <p class="work__description">{{.Description}} <!--<a class="work__description-link" href="{{$element.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a>--></p>
-            <p class="work__index">0{{add $index 1}}</p>
+            <p class="work__description">{{.Description}} <a class="work__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "work__description-icon")}}</a></p>
+            <p class="work__index">{{ .Params.index }}</p>
           </div>
         </div>
         <div class="work__featured-image-row">
-          <p class="work__featured-image work__featured-image--{{$element.File.BaseFileName}}">
-            <img src="{{$element.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+          <p class="work__featured-image work__featured-image--{{.File.BaseFileName}}">
+            <img src="{{.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
           </p>
         </div>
       </section>
