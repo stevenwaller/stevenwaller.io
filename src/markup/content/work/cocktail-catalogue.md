@@ -8,7 +8,7 @@ client = "Personal"
 year = "2018"
 roles = ["Designer", "Developer"]
 agency = "Personal"
-tools = ["React Native", "React Navigation", "Redux", "Typescript", "Serverless", "Node"]
+tools = ["React Native", "React Navigation", "Redux", "Typescript", "Serverless"]
 featured_image = "images/work/cocktail-catalogue/featured.png"
 index = "03"
 +++
@@ -30,6 +30,9 @@ Allow the user to search, filter, and sort the recipes by ingredients the have o
 
 Allow users to take pictures of the liquor bottles they have on hand and use [Clarifai's](https://www.clarifai.com/) AI powered photo recognition to and add it to their local inventory on the phone.
 
+### Testing
+
+Tests created using [Jest](https://github.com/facebook/jest) and [Enzyme](https://github.com/airbnb/enzyme) with [Typescript](https://www.typescriptlang.org/) for type checking.
 
 {{% /md %}}
 </div>
