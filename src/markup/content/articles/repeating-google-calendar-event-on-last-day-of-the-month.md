@@ -1,6 +1,6 @@
 +++
 title = "Repeating Google Calendar event on the last day of the month"
-date = 2018-03-04T14:10:23-07:00
+date = 2017-03-04T14:10:23-07:00
 description = "I was trying to create an event in Google Calendar that takes place on the last day of each month. Unfortunately there is not an easy way to this."
 draft = false
 tags = []
