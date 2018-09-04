@@ -1,7 +1,7 @@
 +++
 title = "Western Union: MyWU"
 date = 2018-04-15T14:54:44-07:00
-description = "Worked closely with development partner to build an Angular app for Western Union's global membership program that was deployed to 35+ countries. Registered users row 100% and redemptions 150%. Won WU Lion “Breakthrough of the Year”."
+description = "Worked closely with external development partner to build web app for Western Union's global membership program. Deployed to over 35 countries, registered users grew by 100% and redemptions by 150%. The project won the WU Lion “Breakthrough of the Year” award."
 draft = false
 nda = false
 client = "Western Union"
@@ -10,4 +10,25 @@ roles = ["Developer"]
 agency = "Sisu"
 tools = ["Angular 2", "WordPress", "Docker"]
 featured_image = "images/work/western-union-mywu/featured.png"
+index = "06"
 +++
+
+<div class="markdown article__column">
+{{% md %}}
+
+## Highlights
+
+### Authentication
+
+Integrates with Western Unions existing authentication system so users don't have to create multiple accounts.
+
+### Scalable deployment
+
+Leverages Docker for easy local development and scalable deployment for production.
+
+![MyWU website home page](/images/work/western-union-mywu/landing.jpg)
+
+
+
+{{% /md %}}
+</div>
