@@ -1,7 +1,7 @@
 +++
 title = "Calendar App"
 date = 2018-04-20T14:54:44-07:00
-description = "A touch-friendly, drag-and-drop collaborative event planning app that syncs in real-time and is optimized to work on the Microsoft Surface Hub"
+description = "A touch-friendly, drag-and-drop collaborative event planning app that syncs in real-time and is optimized to work on the Microsoft Surface Hub."
 draft = false
 nda = true
 client = "NDA"
