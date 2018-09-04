@@ -1,22 +1,59 @@
 {{ partial "start-page" . }}
-<section class="article-list__article article">
-  <div class="article__title-container">
-    <h1 class="article__title">{{.Title}}</h1>
-  </div>
-  <div class="article__content">
-    <aside class="meta">
-      <div class="meta__item">
-        <h3 class="meta__title">Date</h3>
-        <p class="meta__details">{{.Date.Format "2006-01-02"}}</p>
+<section class="article-list article-list--single">
+  <div class="article-list__article article">
+    <div class="article__title-row">
+      <div class="article__title-column">
+        <h1 class="article__title">{{.Title}}</h1>
       </div>
-      <div class="meta__item">
-        <h3 class="meta__title">Tags</h3>
-        <p class="meta__details"><a href="#">CSS</a>, <a href="#">Dev</a></p>
+    </div>
+    <div class="article__content">
+      <aside class="meta">
+        <div class="meta__item">
+          <h3 class="meta__title">Year</h3>
+          <ul class="meta__details">
+            <li class="meta__detail">{{.Params.year}}</li>
+          </ul>
+        </div>
+        <div class="meta__item">
+          <h3 class="meta__title">Role</h3>
+          <ul class="meta__details">
+            {{ range .Params.roles }}
+              <li class="meta__detail">{{.}}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ if .Params.agency }}
+        <div class="meta__item">
+          <h3 class="meta__title">Agency</h3>
+          <ul class="meta__details">
+            <li class="meta__detail">{{.Params.agency}}</li>
+          </ul>
+        </div>
+        {{ end }}
+        <div class="meta__item">
+          <h3 class="meta__title">Tools</h3>
+          <ul class="meta__details">
+            {{ range .Params.tools }}
+              <li class="meta__detail">{{.}}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
+      <div class="markdown article__column">
+        <p class="article__title-description">{{.Description}}</p>
+        <p class="work__index">{{ .Params.index }}</p>
       </div>
-    </aside>
-    <div class="article__body">{{ .Content }}</div>
+      <div class="work__featured-image-row">
+        <p class="work__featured-image work__featured-image--{{.File.BaseFileName}}">
+          <img src="{{.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+        </p>
+      </div>
+
+      {{ .Content }}
+    </div>
   </div>
 </section>
+
 
 {{ partial "end-page" . }}
 

@@ -56,7 +56,7 @@
   position: relative;
   padding-bottom: 29px;
   margin-bottom: 20px;
-  font-size: 48px;
+  font-size: 53px;
   font-family: $sans;
   font-weight: bold;
   color: $white;
@@ -116,6 +116,17 @@
   margin-left: 8px;
   position: relative;
   top: -1px;
+}
+
+.article__title-description {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.4;
+
+  @media (max-width: $breakSml) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 
 // Columns and body

@@ -2,7 +2,7 @@
 
 baseurl = "/"
 languageCode = "en-us"
-title = "Steven Waller"
+title = "Steven Waller › Full-Stack Developer"
 
 # Directory locations
 publishDir = "dist"

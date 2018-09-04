@@ -136,6 +136,7 @@
 // CTA
 // ----------------------------------------- //
 .home-section__cta {
+  margin-top: 35px;
   @media (max-width: $breakSml) {
     font-size: 15px;
     margin-bottom: 2px;
@@ -172,7 +173,7 @@
 .home-logos__item {
   margin-bottom: 10px;
   text-align: center;
-  flex: 1 1 auto;
+  flex: 1 1 25%;
 
   @media (max-width: $breakSml) {
     flex-basis: 50%;
