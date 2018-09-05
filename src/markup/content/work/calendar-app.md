@@ -1,6 +1,6 @@
 +++
 title = "Calendar App"
-date = 2018-04-20T14:54:44-07:00
+date = 2018-04-17T14:54:44-07:00
 description = "A touch-friendly, drag-and-drop collaborative event planning app that syncs in real-time and is optimized to work on the Microsoft Surface Hub."
 draft = false
 nda = true
@@ -10,7 +10,7 @@ roles = ["Developer", "Designer", "IA"]
 agency = "Sisu"
 tools = ["React", "React-DnD", "Express", "Socket.IO", "MongoDB", "Jenkins", "Docker"]
 featured_image = "images/work/calendar/featured.png"
-index = "02"
+index = "04"
 +++
 
 <div class="markdown article__column">

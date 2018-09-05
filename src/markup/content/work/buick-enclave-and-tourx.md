@@ -1,6 +1,6 @@
 +++
 title = "Buick: Enclave & TourX"
-date = 2018-04-21T14:54:44-07:00
+date = 2018-04-16T14:54:44-07:00
 description = "A multi-agency effort to introduce consumers to Buick’s revitalized brand through micro-sites, which utilized interactive 3D-rendered video assets to unveil Buick’s new flagship cars."
 draft = false
 nda = false
@@ -10,7 +10,7 @@ roles = ["Director", "Developer"]
 agency = "Sisu"
 tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js"]
 featured_image = "images/work/buick/featured.png"
-index = "01"
+index = "05"
 +++
 
 <div class="markdown article__column">

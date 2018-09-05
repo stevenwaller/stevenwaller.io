@@ -1,6 +1,6 @@
 +++
 title = "Create Advertising"
-date = 2018-04-17T14:54:44-07:00
+date = 2018-04-18T14:54:44-07:00
 description = "Custom WordPress theme built with React to showcase Create Advertising's amazing catalog of work using an expandable grid and custom Vimeo video player carousel."
 draft = false
 nda = false
@@ -10,7 +10,7 @@ roles = ["Developer", "Designer"]
 agency = "Sisu"
 tools = ["WordPress", "React", "Isotope.js", "Trellis", "Vimeo"]
 featured_image = "images/work/create/featured.png"
-index = "04"
+index = "03"
 +++
 
 <div class="markdown article__column">

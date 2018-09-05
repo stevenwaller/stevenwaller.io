@@ -1,6 +1,6 @@
 +++
 title = "Form Manager"
-date = 2018-04-17T14:54:44-07:00
+date = 2018-04-19T14:54:44-07:00
 description = "Replaced complex paper-based form process with a React progressive web app, optimizing the productivity of the employees."
 draft = false
 nda = true
@@ -10,7 +10,7 @@ roles = ["Developer"]
 agency = "Sisu"
 tools = ["React", "React-Router", "Redux"]
 featured_image = "images/work/form-manager/featured.png"
-index = "05"
+index = "02"
 +++
 
 <div class="article__column markdown">
