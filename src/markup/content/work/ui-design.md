@@ -42,7 +42,6 @@ index = "08"
 
 ![Sony home page](/images/work/ui-design/sony-1.jpg)
 
-![Sony navigation](/images/work/ui-design/sony-2.jpg)
 
 ## PacSun Swimsuit Builder
 
