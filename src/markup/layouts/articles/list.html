@@ -6,17 +6,17 @@
       <p class="page-intro__description">{{.Description}}</p>
     </div>
   </div>
-  <div class="article-list article-list--short">
+  <div class="post-list post-list--short">
     {{ range .Data.Pages }}
-      <section class="article-list__article article">
-        <div class="article__title-row">
-          <div class="article__title-column">
-            <h1 class="article__title article__title--small">
-              <a class="article__title-link" href="{{.Permalink}}">{{.Title}}</a>
+      <section class="post-list__post post">
+        <div class="post__title-row">
+          <div class="post__title-column">
+            <h1 class="post__title post__title--small">
+              <a class="post__title-link" href="{{.Permalink}}">{{.Title}}</a>
             </h1>
           </div>
         </div>
-        <div class="article__content">
+        <div class="post__content">
           <aside class="meta">
             <div class="meta__item meta__item--date">
               <h3 class="meta__title">Date</h3>
@@ -35,12 +35,13 @@
             </div>
             {{ end }}
           </aside>
-          <div class="article__body">
-            <p class="article__description">{{.Description}} <a class="article__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "article__description-icon")}}</a></p>
+          <div class="post__body">
+            <p class="post__description">{{.Description}} <a class="post__description-link" href="{{.Permalink}}">{{ partial "svgs/arrow.svg" (dict "class" "post__description-icon")}}</a></p>
           </div>
         </div>
       </section>
     {{ end }}
   </div>
 </main>
+<link rel="stylesheet" type="text/css" href="{{ "css/articles.css" | relURL }}"/>
 {{ partial "end-page" . }}

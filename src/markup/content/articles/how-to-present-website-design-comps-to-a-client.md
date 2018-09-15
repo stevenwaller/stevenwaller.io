@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 <p class="page-intro__description">So you have toiled away through blood sweat and tears to create the perfect design for you client’s new website, but how to you show it to them?</p>
@@ -44,3 +44,5 @@ In the past I would add the design comp image to the HTML page and link it to th
 
 {{% /md %}}
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/articles/how-to-present.css"/>

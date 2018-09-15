@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 While I personally prefer using with the [8-Point Grid System](https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632) I've worked on projects where we are required to use the [Bootstrap library](https://getbootstrap.com/) and it's accompanying grid. While developers love how easy it is to set up columns some designers tend to struggle with understanding how their designs will fit into the grid framework.

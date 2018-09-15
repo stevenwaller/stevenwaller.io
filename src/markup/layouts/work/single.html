@@ -1,12 +1,12 @@
 {{ partial "start-page" . }}
-<section class="article-list article-list--single">
-  <div class="article-list__article article">
-    <div class="article__title-row">
-      <div class="article__title-column">
-        <h1 class="article__title">{{.Title}}</h1>
+<section class="post-list post-list--single">
+  <div class="post-list__post post">
+    <div class="post__title-row">
+      <div class="post__title-column">
+        <h1 class="post__title">{{.Title}}</h1>
       </div>
     </div>
-    <div class="article__content">
+    <div class="post__content">
       <aside class="meta">
         <div class="meta__item">
           <h3 class="meta__title">Year</h3>
@@ -39,8 +39,8 @@
           </ul>
         </div>
       </aside>
-      <div class="markdown article__column">
-        <p class="article__title-description">{{.Description}}</p>
+      <div class="markdown post__column">
+        <p class="post__title-description">{{.Description}}</p>
         <p class="work__index">{{ .Params.index }}</p>
       </div>
       <div class="work__featured-image-row">
@@ -54,6 +54,6 @@
   </div>
 </section>
 
-
+<link rel="stylesheet" type="text/css" href="{{ "css/work.css" | relURL }}"/>
 {{ partial "end-page" . }}
 

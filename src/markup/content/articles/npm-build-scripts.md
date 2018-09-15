@@ -6,7 +6,7 @@ draft = true
 tags = []
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 Yes make files are amazing, but JS all the things.

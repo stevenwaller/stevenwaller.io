@@ -1,4 +1,4 @@
-.article-list {
+.post-list {
   .meta {
     position: absolute;
     z-index: 10;
@@ -16,13 +16,13 @@
     }
   }
 }
-.article-list__article {
+.post-list__post {
 
 }
 
-// Article
+// post
 // -------------------------------------------------------------------------- //
-.article {
+.post {
   margin-bottom: 100px;
 
   @media (max-width: $breakSml) {
@@ -32,10 +32,10 @@
 
 // Row
 // ----------------------------------------- //
-.article__title-row {
+.post__title-row {
   @include row;
 }
-.article__title-column {
+.post__title-column {
   @include columns(8);
   @include offset(2);
 
@@ -52,7 +52,7 @@
 
 // Title
 // ----------------------------------------- //
-.article__title {
+.post__title {
   position: relative;
   padding-bottom: 29px;
   margin-bottom: 20px;
@@ -79,7 +79,7 @@
 
 }
 
-.article__title--small {
+.post__title--small {
   font-size: 33px;
 
   @media (max-width: $breakSml) {
@@ -88,17 +88,17 @@
 }
 
 
-.article__title-link {
+.post__title-link {
   color: $primary;
   font-weight: bold;
 }
-.article__content {
+.post__content {
   @include row;
-  .article__column:first-of-type > *:first-child {
+  .post__column:first-of-type > *:first-child {
     margin-top: 0;
   }
 }
-.article__description {
+.post__description {
   line-height: 1.5;
 
   @media (max-width: $breakSml) {
@@ -108,17 +108,17 @@
 
 // Description
 // ----------------------------------------- //
-.article__description-link {
+.post__description-link {
 
 }
-.article__description-icon {
+.post__description-icon {
   fill: $primary;
   margin-left: 8px;
   position: relative;
   top: -1px;
 }
 
-.article__title-description {
+.post__title-description {
   font-size: 20px;
   font-style: italic;
   line-height: 1.4;
@@ -131,8 +131,8 @@
 
 // Columns and body
 // ----------------------------------------- //
-.article__column,
-.article__body {
+.post__column,
+.post__body {
   @include columns(8);
   @include offset(2);
 
@@ -147,11 +147,11 @@
   }
 }
 
-.article__column-full {
+.post__column-full {
   @include columns(12);
 }
 
-.article__column-right {
+.post__column-right {
   @include columns(10);
   @include offset(2);
 
@@ -166,7 +166,7 @@
   }
 }
 
-.article__column-left {
+.post__column-left {
   @include columns(10);
 
   @media (max-width: $breakLrg) {

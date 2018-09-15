@@ -6,7 +6,7 @@ draft = true
 tags = []
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 Netlify CMS is an amazing piece of open source software that makes it easy to update content on sites built using static site generators like Hugo or <asdf>.

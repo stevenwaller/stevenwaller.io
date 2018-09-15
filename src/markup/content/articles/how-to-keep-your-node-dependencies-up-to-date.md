@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 If you anything like me once you've started a project it is tough to remember to updated your node dependencies as new version come out. Here are a couple techniques I have found helpful.

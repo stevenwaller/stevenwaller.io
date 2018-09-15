@@ -9,7 +9,7 @@ tags = []
 <script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script src="/files/ie-hover-bug/post.js" type="text/javascript"></script>
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 ## The Bug
@@ -95,3 +95,5 @@ After a lot of trial and error I found a solution that makes IE render the box c
 
 {{% /md %}}
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/articles/ie-hover-bug.css"/>

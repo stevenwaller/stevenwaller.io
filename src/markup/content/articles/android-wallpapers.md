@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 I was making a variety of wallpapers for my new [Droid Incredible](http://www.droiddoes.com/#/droidi/featured/overview) and thought I would share (guess I learned something in Kindergarten after all). A couple of these textures where part of free texture packs from other people, unfortunately I lost the original source. If you recognize one please let me know.
@@ -20,7 +20,7 @@ Props to [AndroidCentral](http://www.androidcentral.com/android-wallpaper-ringto
 {{% /md %}}
 </div>
 
-<div class="article__column-right">
+<div class="post__column-right">
   <div class="wallpapers">
     <div class="wallpapers__wallpaper">
       <img src="/images/wallpapers/Holy-Metal-Thumb.jpg" alt="Metal with holes in it" class="wallpaper__thumb">
@@ -72,5 +72,7 @@ Props to [AndroidCentral](http://www.androidcentral.com/android-wallpaper-ringto
     </div>
   </div>
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/articles/wallpapers.css"/>
 
 

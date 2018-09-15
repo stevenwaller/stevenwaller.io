@@ -84,15 +84,15 @@ module.exports = {
   // ----------------------------------------------------------- //
   optimization: {
     // Split all the files imported from node_modules into a separate vendor file
-    splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          chunks: 'all'
-        }
-      }
-    }
+    // splitChunks: {
+    //   cacheGroups: {
+    //     commons: {
+    //       test: /[\\/]node_modules[\\/]/,
+    //       name: 'vendor',
+    //       chunks: 'all'
+    //     }
+    //   }
+    // }
   },
 
   // Loaders

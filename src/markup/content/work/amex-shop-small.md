@@ -13,7 +13,7 @@ featured_image = "images/work/amex-shop-small/featured.png"
 index = "07"
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 ## Highlights

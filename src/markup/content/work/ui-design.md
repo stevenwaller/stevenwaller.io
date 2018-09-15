@@ -13,7 +13,7 @@ featured_image = "images/work/ui-design/featured.png"
 index = "08"
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 ## Golden Globes

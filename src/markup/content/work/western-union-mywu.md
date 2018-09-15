@@ -13,7 +13,7 @@ featured_image = "images/work/western-union-mywu/featured.png"
 index = "06"
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 ## Highlights

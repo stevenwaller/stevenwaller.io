@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 1. You don't use the WYSIWYG editor in a CMS, it's easier to just write the code yourself.

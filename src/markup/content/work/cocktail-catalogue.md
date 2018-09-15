@@ -13,7 +13,7 @@ featured_image = "images/work/cocktail-catalogue/featured.png"
 index = "01"
 +++
 
-<div class="markdown article__column">
+<div class="markdown post__column">
 {{% md %}}
 
 ## Highlights

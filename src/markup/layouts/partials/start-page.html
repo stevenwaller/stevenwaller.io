@@ -32,37 +32,13 @@
     <link rel="icon" type="image/png"href="{{ "favicon.png" | relURL }}" sizes="16x16">
 
     <link rel="stylesheet" type="text/css" href="{{ "css/critical.css" | relURL }}"/>
+    <link rel="stylesheet" href="https://use.typekit.net/bow4qtw.css">
 
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'bow4qtw',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
+    <!-- <script src="{{ "js/vendor.js" | relURL }}"></script> -->
+    <script src="{{ "js/scripts.js" | relURL }}"></script>
 
   </head>
   <body style="background-color: #2A2A22; ">
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" type="text/css" href="{{ "css/deferred.css" | relURL }}"/>
-    </noscript>
-
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
     <div class="site-container">
       {{ partial "site-header" . }}
         <div class="site-content">

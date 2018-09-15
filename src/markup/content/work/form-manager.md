@@ -13,7 +13,7 @@ featured_image = "images/work/form-manager/featured.png"
 index = "02"
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 ## Highlights

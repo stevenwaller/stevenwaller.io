@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 This is a short article, but I just wanted to document this quick fix.

@@ -5,7 +5,7 @@ description = "The goal of this system is to allow users to easily divide conten
 draft = false
 tags = []
 +++
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 ## The goal
@@ -44,11 +44,11 @@ col_(number of current column(s) out of total columns) _ (total number of column
 {{% /md %}}
 </div>
 
-<div class="article__column-full">
+<div class="post__column-full">
   <img src="/images/percent-columns/two-columns.gif" alt="Two columns" class="percent-columns__img">
 </div>
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 #### If you wanted to create a four column layout:
@@ -62,11 +62,11 @@ col_(number of current column(s) out of total columns) _ (total number of column
 {{% /md %}}
 </div>
 
-<div class="article__column-full">
+<div class="post__column-full">
   <img src="/images/percent-columns/four-columns.gif" alt="Four columns" class="percent-columns__img">
 </div>
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 #### If you wanted to create a four column layout with the first column spanning three of the four columns:
@@ -79,11 +79,11 @@ col_(number of current column(s) out of total columns) _ (total number of column
 {{% /md %}}
 </div>
 
-<div class="article__column-full">
+<div class="post__column-full">
   <img src="/images/percent-columns/1-3-of-4.gif" alt="1/3 and 1/4 columns" class="percent-columns__img">
 </div>
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 ## Column Gutters
@@ -145,11 +145,11 @@ You can keep dividing columns into smaller and smaller increments by nesting col
 {{% /md %}}
 </div>
 
-<div class="article__column-full">
+<div class="post__column-full">
   <img src="/images/percent-columns/two-columns-into-three.gif" alt="Two columns with the right column divided into three" class="percent-columns__img">
 </div>
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 ## How to use
@@ -176,3 +176,5 @@ The % Columns CSS library is free to use and you can re-purpose it to suit your 
 
 {{% /md %}}
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/articles/percent-columns.css"/>

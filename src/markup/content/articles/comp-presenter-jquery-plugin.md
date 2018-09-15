@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 ## Easily present website design comps
@@ -136,4 +136,6 @@ Back in the header of the HTML file add the following code below the code we add
 
 
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/articles/comp-presenter.css"/>
 

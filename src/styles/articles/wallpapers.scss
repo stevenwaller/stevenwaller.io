@@ -1,3 +1,6 @@
+@import '../vars';
+@import '../mixins';
+
 .wallpapers {
   display: flex;
   flex-wrap: wrap;

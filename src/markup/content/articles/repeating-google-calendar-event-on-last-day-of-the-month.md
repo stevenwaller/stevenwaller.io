@@ -6,7 +6,7 @@ draft = false
 tags = []
 +++
 
-<div class="article__column markdown">
+<div class="post__column markdown">
 {{% md %}}
 
 I was trying to create an event in Google Calendar that takes place on the last day of each month. Unfortunately there is not an easy way to do this since Google Calendar only supports the following:
