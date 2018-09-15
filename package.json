@@ -8,7 +8,7 @@
     "dev": "npm run clean && npm-run-all --parallel watch serve",
     "clean": "rimraf dist && mkdir dist && rimraf .temp && mkdir .temp",
     "watch": "npm-run-all --parallel \"build:* --watch\"",
-    "serve": "browser-sync start --config browsersync.config.json",
+    "serve": "browser-sync start --server dist --files dist --no-ghost-mode --no-open",
     "build:assets": "cpx \"src/**/*.!(html|md|scss|js|svg)\" dist",
     "build:files": "cpx \"src/files/**/*.*\" dist/files",
     "build:html": "hugo --config config.toml -v",
@@ -25,8 +25,7 @@
   ],
   "dependencies": {
     "lodash": "4.17.10",
-    "modernizr": "3.6.0",
-    "turbolinks": "^5.2.0"
+    "modernizr": "3.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
