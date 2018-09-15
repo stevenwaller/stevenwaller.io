@@ -8,23 +8,6 @@
 @import 'common/nav';
 @import 'common/page-intro';
 @import 'common/footer';
-@import 'common/meta';
-@import 'common/gist';
-@import 'common/markdown';
-
-// Home
-@import 'home/home';
-
-// Articles
-@import 'articles/articles';
-@import 'articles/wallpapers';
-@import 'articles/percent-columns';
-@import 'articles/comp-presenter';
-@import 'articles/how-to-present';
-@import 'articles/ie-hover-bug';
-
-// Work
-@import 'work/work';
 
 html,
 body {
