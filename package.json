@@ -13,7 +13,7 @@
     "build:files": "cpx \"src/files/**/*.*\" dist/files",
     "build:html": "hugo --config config.toml -v",
     "build:sass": "node-sass-chokidar src/styles/ --source-map dist/css --output .temp --output-style compressed",
-    "build:autoprefixer": "postcss \".temp/*.css\" --use autoprefixer --dir dist/css",
+    "build:autoprefixer": "postcss \".temp/*.css\" --use autoprefixer --dir dist/css --map false",
     "build:lint": "esw \"src/scripts/{,**/}*.js\"",
     "build:js": "webpack"
   },
