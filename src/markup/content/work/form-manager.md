@@ -10,6 +10,7 @@ roles = ["Developer"]
 agency = "Sisu"
 tools = ["React", "React-Router", "Redux"]
 featured_image = "images/work/form-manager/featured.png"
+featured_image_placeholder = "svgs/work/form-manager.svg"
 index = "02"
 +++
 

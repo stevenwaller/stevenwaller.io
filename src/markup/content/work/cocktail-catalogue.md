@@ -10,6 +10,9 @@ roles = ["Designer", "Developer"]
 agency = "Personal"
 tools = ["React Native", "React Navigation", "Redux", "Typescript", "Serverless"]
 featured_image = "images/work/cocktail-catalogue/featured.png"
+featured_image_2x = "images/work/cocktail-catalogue/featured@2x.png"
+featured_image_small = "images/work/cocktail-catalogue/featured@0.5x.png"
+featured_image_placeholder = "svgs/work/cocktail.svg"
 index = "01"
 +++
 

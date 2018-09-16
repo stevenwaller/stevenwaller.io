@@ -10,6 +10,7 @@ roles = ["Director", "Developer"]
 agency = "Sisu"
 tools = ["React", "React-Router", "Typescript", "GSAP", "Easel.js"]
 featured_image = "images/work/buick/featured.png"
+featured_image_placeholder = "svgs/work/buick.svg"
 index = "05"
 +++
 

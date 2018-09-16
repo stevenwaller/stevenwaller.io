@@ -10,6 +10,7 @@ roles = ["Developer", "Designer", "IA"]
 agency = "Sisu"
 tools = ["React", "React-DnD", "Express", "Socket.IO", "MongoDB", "Jenkins", "Docker"]
 featured_image = "images/work/calendar/featured.png"
+featured_image_placeholder = "svgs/work/calendar.svg"
 index = "04"
 +++
 

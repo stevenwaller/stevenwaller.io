@@ -129,6 +129,8 @@
 // ----------------------------------------- //
 .work__description {
   line-height: 1.5;
+  position: relative;
+  z-index: 10;
 
   @media (max-width: $breakSml) {
     line-height: 1.3;
@@ -186,15 +188,35 @@
   text-align: right;
   position: relative;
 
+  svg,
   img {
-    position: relative;
     right: -94px;
     width: 100%;
-    // max-width: 1600px;
+  }
+
+  svg {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
+  &.is-loaded {
+    svg {
+      opacity: 0;
+    }
   }
 
   @media (max-width: $breakLrg) {
     text-align: center;
+    svg,
     img {
       right: 0;
     }

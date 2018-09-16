@@ -10,6 +10,7 @@ roles = ["Developer"]
 agency = "Sisu"
 tools = ["jQuery", "Google Maps"]
 featured_image = "images/work/amex-shop-small/featured.png"
+featured_image_placeholder = "svgs/work/shop-small.svg"
 index = "07"
 +++
 

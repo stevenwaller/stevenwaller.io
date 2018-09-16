@@ -45,7 +45,17 @@
       </div>
       <div class="work__featured-image-row">
         <p class="work__featured-image work__featured-image--{{.File.BaseFileName}}">
-          <img src="{{.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+            {{ if .Params.featured_image_placeholder }}
+            {{ partial .Params.featured_image_placeholder (dict "class" "work__featured-placeholder")}}
+          {{ end }}
+          {{ if .Params.featured_image_2x }}
+            <picture>
+              <source srcset="{{.Params.featured_image_small | relURL}}, {{.Params.featured_image | relURL}} 2x" media="(max-width: 700px)">
+              <img src="{{.Params.featured_image | relURL}}" srcset="{{.Params.featured_image | relURL}}, {{.Params.featured_image_2x | relURL}} 2x" alt="Collection of apple devices with the website on each screen">
+            </picture>
+          {{ else }}
+            <img src="{{.Params.featured_image | relURL}}" alt="Collection of apple devices with the website on each screen">
+          {{ end }}
         </p>
       </div>
 

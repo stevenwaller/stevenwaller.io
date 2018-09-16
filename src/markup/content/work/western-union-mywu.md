@@ -10,6 +10,7 @@ roles = ["Developer"]
 agency = "Sisu"
 tools = ["Angular 2", "WordPress", "Docker"]
 featured_image = "images/work/western-union-mywu/featured.png"
+featured_image_placeholder = "svgs/work/mywu.svg"
 index = "06"
 +++
 

@@ -10,6 +10,7 @@ roles = ["Developer"]
 agency = "Sisu"
 tools = ["PhotoShop", "Sketch", "Invision"]
 featured_image = "images/work/ui-design/featured.png"
+featured_image_placeholder = "svgs/work/ui-design.svg"
 index = "08"
 +++
 

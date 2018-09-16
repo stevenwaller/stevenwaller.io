@@ -10,6 +10,7 @@ roles = ["Developer", "Designer"]
 agency = "Sisu"
 tools = ["WordPress", "React", "Isotope.js", "Trellis", "Vimeo"]
 featured_image = "images/work/create/featured.png"
+featured_image_placeholder = "svgs/work/create-advertising.svg"
 index = "03"
 +++
 
