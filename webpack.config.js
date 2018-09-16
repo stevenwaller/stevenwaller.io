@@ -71,12 +71,7 @@ module.exports = {
     alias: {
       // Use .modernizrrc instead of full library to create a custom build
       // See loader below
-      modernizr$: path.resolve(__dirname, '.modernizrrc'),
-      postal: path.resolve('node_modules', 'postal/lib/postal.lodash.js'),
-      Easing: path.resolve(
-        'node_modules',
-        'gsap/src/uncompressed/easing/EasePack.js'
-      )
+      // modernizr$: path.resolve(__dirname, '.modernizrrc'),
     }
   },
 
